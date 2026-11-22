@@ -35,3 +35,5 @@ snapshots/
 artifacts/
 *.bak.json
 node_modules/
+
+auditoria_*.txt

@@ -48,6 +48,7 @@ import metadata_viral
 import notificador_telegram
 import paletas
 import qa_video
+import render_engine
 import scheduler_manager
 import trend_hunter
 import vault_indexer
@@ -60,6 +61,12 @@ try:
     import sfx_generator
 except Exception:
     sfx_generator = None
+try:
+    from agentes.orquestador import ejecutar as ejecutar_orquestador
+    from agentes.telegram_decisiones import notificar_urgente
+except Exception:
+    ejecutar_orquestador = None
+    notificar_urgente = None
 
 
 def log(mensaje: str) -> None:
@@ -321,7 +328,14 @@ def requiere_loop_invisible(idea: dict[str, Any], fecha: Any) -> bool:
     return int(getattr(fecha, "day", 1)) % 2 == 1
 
 
-def prompt_generacion(idea: dict[str, Any], proyecto: str, fecha: Any, idioma: str = "es", estilo: dict[str, Any] | None = None) -> str:
+def prompt_generacion(
+    idea: dict[str, Any],
+    proyecto: str,
+    fecha: Any,
+    idioma: str = "es",
+    estilo: dict[str, Any] | None = None,
+    aporte_agentes: str = "",
+) -> str:
     bucle = requiere_loop_invisible(idea, fecha)
     estilo_resuelto = estilo or estilos_video.seleccionar(idea)
     serie_id = str(idea.get("serie_id") or "").strip()
@@ -350,6 +364,7 @@ def prompt_generacion(idea: dict[str, Any], proyecto: str, fecha: Any, idioma: s
         f"Enfoque: {idea.get('enfoque', '')}. "
         f"Fuente: {idea.get('fuente', '')} {idea.get('url', '')}. "
         f"{estilos_video.prompt_estilo(estilo_resuelto)} "
+        f"{aporte_agentes.strip()} "
         "Es un short vertical de 1080x1920 y 30 fps con duración entre 15 y 60 segundos, sin superar nunca 60.0 s, voz conversacional en español mexicano, "
         "gancho visual en 0–1.5 s con spring scale 1.15->1.0 y light sweep, GSAP con eases con nombre, captions cortos y SFX locales. "
         "Consulta antes de animar `.agents/skills/remotion-best-practices/SKILL.md`, `.agents/skills/remotion-code-motion-explainer/SKILL.md` y `_shared/skills_ext/claude-remotion-skill/remotion-motion-graphics/SKILL.md`; adapta spring/stagger/curvas a GSAP pausado (sin React/useCurrentFrame). "
@@ -827,7 +842,45 @@ def procesar_idea(
     proyecto = ROOT_DIR / proyecto_nombre
     resultado["proyecto"] = proyecto_nombre
     estilo = estilos_video.seleccionar(idea)
-    prompt = prompt_generacion(idea, proyecto_nombre, fecha, idioma=idioma, estilo=estilo)
+    fecha_iso = fecha.isoformat() if hasattr(fecha, "isoformat") else str(fecha)
+    aporte_agentes = ""
+    resultado_agentes: dict[str, Any] = {}
+    if ejecutar_orquestador and os.getenv("AURA_MULTIAGENTE", "1") == "1":
+        try:
+            resultado_agentes = ejecutar_orquestador(
+                idea,
+                estilo,
+                fecha_iso,
+                notificar=notificar,
+                modo_prueba=os.getenv("AURA_MODO_PRUEBA", "0") == "1",
+            )
+            aporte_agentes = str(resultado_agentes.get("prompt_agentes") or "")
+            log(f"[agentes] 20 agentes ejecutados; caché={resultado_agentes.get('ruta', '')}")
+            if notificar and notificar_urgente:
+                avisos_criticos = []
+                for informe in resultado_agentes.get("resultados", []):
+                    if informe.get("estado") == "error":
+                        avisos_criticos.append(f"{informe.get('id')}: {informe.get('error', '')}")
+                    for aviso in informe.get("avisos", []):
+                        if any(clave in str(aviso).lower() for clave in ("supera", "ffmpeg no", "no existe", "inválido")):
+                            avisos_criticos.append(f"{informe.get('id')}: {aviso}")
+                if avisos_criticos:
+                    notificar_urgente(
+                        "Fallo crítico en agentes locales",
+                        " | ".join(avisos_criticos[:5]),
+                        "La fábrica continúa con el fallback determinista y validará el MP4 antes de publicar.",
+                    )
+        except Exception as error_agentes:
+            log(f"[agentes] fallback por error: {error_agentes}")
+            resultado_agentes = {"error": f"{type(error_agentes).__name__}: {error_agentes}"}
+    prompt = prompt_generacion(
+        idea,
+        proyecto_nombre,
+        fecha,
+        idioma=idioma,
+        estilo=estilo,
+        aporte_agentes=aporte_agentes,
+    )
     tema = str(idea.get("titulo") or "")
     log(f"[idea {indice or idea.get('orden', '?')}/{total}] {tema}")
     log(f"[idea] proyecto={proyecto_nombre} estilo={estilo.get('id')} referencia={estilo.get('referencia')}")
@@ -876,6 +929,16 @@ def procesar_idea(
             if notificar and intento > 1:
                 notificador_telegram.notificar_error_video(tema, error, "verificación de render", intento)
             return False, None, error
+        if resultado_agentes:
+            try:
+                ruta_agentes = proyecto / "renders" / "agentes.json"
+                ruta_agentes.parent.mkdir(parents=True, exist_ok=True)
+                ruta_agentes.write_text(
+                    json.dumps(resultado_agentes, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+            except (OSError, TypeError, ValueError) as error_agentes_json:
+                log(f"[agentes] no se pudo guardar agentes.json: {error_agentes_json}")
         try:
             descargar_recursos.asegurar(proyecto, estilo, instalar_paquetes=False)
         except (OSError, ValueError) as error_recursos:
@@ -976,10 +1039,36 @@ def procesar_idea(
                             cp.write_text(h, encoding="utf-8")
             except Exception as e_adj:
                 log(f"[QA] ajuste automático falló: {e_adj}")
-            ok_render, msg_render = ejecutar_comando(["npm", "run", "render"], proyecto, "qa-rerender", timeout=1200)
+            duracion_detectada = 0.0
+            try:
+                tecnico_detectado = resultado_qa.get("tecnico") or {}
+                duracion_detectada = float(tecnico_detectado.get("duracion") or 0)
+            except (AttributeError, TypeError, ValueError):
+                duracion_detectada = 0.0
+            if duracion_detectada > 60.0:
+                try:
+                    recorte = render_engine.recortar_duracion(proyecto, duracion_detectada, notificar=notificar)
+                    log(f"[QA] recorte urgente aplicado: {recorte}")
+                except Exception as error_recorte:
+                    log(f"[QA] recorte urgente falló: {error_recorte}")
+            try:
+                resultado_render = render_engine.render(proyecto, notificar=notificar)
+                ok_render = bool(resultado_render.get("ok"))
+                msg_render = json.dumps(resultado_render, ensure_ascii=False, default=str)
+            except Exception as error_render_engine:
+                log(f"[QA] render_engine con fallback a npm: {error_render_engine}")
+                ok_render, msg_render = ejecutar_comando(["npm", "run", "render"], proyecto, "qa-rerender", timeout=1200)
             if not ok_render:
                 detalle_qa = f"{detalle_qa} | rerender: {msg_render}"
                 break
+            if notificar and notificar_urgente and any(
+                clave in str(detalle_qa).lower() for clave in ("solap", "cortado", "fuera de zona", "supera 60")
+            ):
+                notificar_urgente(
+                    "Texto o duración corregidos",
+                    str(detalle_qa),
+                    "Se aplicó reducción tipográfica, padding extra, recorte de duración cuando aplica y re-render inmediato.",
+                )
             video, err_video = verificar_video(proyecto, idea, estilo)
             if video is None:
                 detalle_qa = err_video or detalle_qa

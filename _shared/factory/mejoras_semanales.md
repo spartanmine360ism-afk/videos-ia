@@ -1,4 +1,4 @@
-# Radar semanal de mejoras — 2026-11-21
+# Radar semanal de mejoras — 2026-11-22
 
 Generado por `weekly_upgrade_radar.py`. **No se instaló ni ejecutó ninguna mejora.**
 Revisa licencia, fecha, compatibilidad y seguridad antes de copiar cualquier comando.
@@ -8,53 +8,53 @@ Los paquetes nuevos requieren aprobación explícita, actualización de `_shared
 
 ### GitHub
 
-- **gg320324492-lgtm/minimax-h3-studio** · GitHub
-  - Enlace oficial: https://github.com/gg320324492-lgtm/minimax-h3-studio
-  - Por qué importa: Local AI video studio: MiniMax-H3 (ComfyUI) generation + Remotion programmatic composition — templates, timeline contracts, QA gates, synthesized audio
-  - Señal: ★ 1 · actualizado 2026-11-20
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/gg320324492-lgtm/minimax-h3-studio" "_radar\gg320324492-lgtm-minimax-h3-studio"`
+- **thecgaigroup/reelsmith** · GitHub
+  - Enlace oficial: https://github.com/thecgaigroup/reelsmith
+  - Por qué importa: Reelsmith: a code-built video skill (HyperFrames + Remotion templates, brand kit, captions, platform exports) for AI agents.
+  - Señal: ★ 0 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/thecgaigroup/reelsmith" "_radar\thecgaigroup-reelsmith"`
+
+- **Cherireal7/tibeb-video-studio** · GitHub
+  - Enlace oficial: https://github.com/Cherireal7/tibeb-video-studio
+  - Por qué importa: Tibeb: a local-first desktop studio for short-form video (projects, asset library, Remotion templates, editor hand-off)
+  - Señal: ★ 0 · actualizado 2026-11-21
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/Cherireal7/tibeb-video-studio" "_radar\cherireal7-tibeb-video-studio"`
+
+- **agusnuriman/meridian-glow-music-video** · GitHub
+  - Enlace oficial: https://github.com/agusnuriman/meridian-glow-music-video
+  - Por qué importa: Remotion music visualizer template — MERIDIAN GLOW. https://youtu.be/kKuLQNySGNY
+  - Señal: ★ 0 · actualizado 2026-11-21
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/agusnuriman/meridian-glow-music-video" "_radar\agusnuriman-meridian-glow-music-video"`
 
 - **inurun/video-admin-template** · GitHub
   - Enlace oficial: https://github.com/inurun/video-admin-template
   - Por qué importa: Admin UI + Remotion stub template for page/TTS editing and video render
-  - Señal: ★ 0 · actualizado 2026-11-20
+  - Señal: ★ 0 · actualizado 2026-11-21
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/inurun/video-admin-template" "_radar\inurun-video-admin-template"`
 
-- **XuHo-IT/Content-Agent-Kit** · GitHub
-  - Enlace oficial: https://github.com/XuHo-IT/Content-Agent-Kit
-  - Por qué importa: Nói với AI bằng tiếng Việt → tìm chủ đề hot, soi đối thủ, viết bài, dựng video 9:16 với 130 template (có video kể chuyện, giọng đọc tiếng Việt), duyệt rồi mới đăng; kèm bộ công cụ chạy quảng cáo Facebook cho shop. Cài làm skill cho Claude Code hoặc dùng với Antigravity. Phần lớn miễn phí, MIT.
-  - Señal: ★ 10 · actualizado 2026-11-20
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/XuHo-IT/Content-Agent-Kit" "_radar\xuho-it-content-agent-kit"`
+- **linimbus/iRecord** · GitHub
+  - Enlace oficial: https://github.com/linimbus/iRecord
+  - Por qué importa: A minimal native screen recorder for Windows. It runs in the system tray, lets you start / pause / stop recording with global hotkeys, supports MP4 / MKV / MOV / WebM / GIF output, can capture the mouse pointer and click effects into the video, and encodes with open-source FFmpeg.
+  - Señal: ★ 1 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/linimbus/iRecord" "_radar\linimbus-irecord"`
 
-- **instavar/mcp-server** · GitHub
-  - Enlace oficial: https://github.com/instavar/mcp-server
-  - Por qué importa: Free Remotion video templates, creative guides and local render diagnostics for AI agents. Optional API-key hosted Studio workflows.
-  - Señal: ★ 0 · actualizado 2026-11-19
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/instavar/mcp-server" "_radar\instavar-mcp-server"`
-
-- **wrg32786/aigent-talking-head** · GitHub
-  - Enlace oficial: https://github.com/wrg32786/aigent-talking-head
-  - Por qué importa: Free, open-source talking-head video editor: turn one phone clip into a captioned reel for TikTok, Reels and Shorts. 51 effects, 29 motion graphics, 56 transitions, local Whisper captions, kinetic typography and an MCP server. Works with Claude Code, Cursor, Codex and Gemini CLI. Apache-2.0.
-  - Señal: ★ 3 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/wrg32786/aigent-talking-head" "_radar\wrg32786-aigent-talking-head"`
-
-- **nachoweb3/elite-editor** · GitHub
-  - Enlace oficial: https://github.com/nachoweb3/elite-editor
-  - Por qué importa: Free local-first video editor with an editable timeline, reviewed AI assistance, GPU effects and local processing. Built on OpenCut.
-  - Señal: ★ 2 · actualizado 2026-11-20
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/nachoweb3/elite-editor" "_radar\nachoweb3-elite-editor"`
+- **veralvx/ffsuite** · GitHub
+  - Enlace oficial: https://github.com/veralvx/ffsuite
+  - Por qué importa: Media tools on ffmpeg. ffman: media manipulation and effects; subverter: subtitles parser and converter; ffmeta: ffmetadata/vorbiscomment/cue parser and converter
+  - Señal: ★ 1 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/veralvx/ffsuite" "_radar\veralvx-ffsuite"`
 
 - **hajiasif0787-spec/losslesscut-corena-video-trim** · GitHub
   - Enlace oficial: https://github.com/hajiasif0787-spec/losslesscut-corena-video-trim
   - Por qué importa: Rapid video trimming through a focused, visual workflow for cleaner cuts.
-  - Señal: ★ 152 · actualizado 2026-11-21
+  - Señal: ★ 150 · actualizado 2026-11-22
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/hajiasif0787-spec/losslesscut-corena-video-trim" "_radar\hajiasif0787-spec-losslesscut-corena-video-trim"`
 
-- **kadro-studio/kadro** · GitHub
-  - Enlace oficial: https://github.com/kadro-studio/kadro
-  - Por qué importa: Free open-source video editor for Windows: no watermarks, subscriptions or accounts. Multi-track timeline, colour grading, chroma key, local AI subtitles and background removal, shader effects, CapCut-style templates.
-  - Señal: ★ 2 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/kadro-studio/kadro" "_radar\kadro-studio-kadro"`
+- **Sujoy-004/dithr** · GitHub
+  - Enlace oficial: https://github.com/Sujoy-004/dithr
+  - Por qué importa: GPU-powered ASCII art and retro effects studio for images, videos and webcam, plus a Python ANSI True Color terminal video player.
+  - Señal: ★ 0 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/Sujoy-004/dithr" "_radar\sujoy-004-dithr"`
 
 - **NirjharBhattacharjee/mockingbird-studio** · GitHub
   - Enlace oficial: https://github.com/NirjharBhattacharjee/mockingbird-studio
@@ -112,34 +112,34 @@ Sin hallazgos en esta consulta.
 
 ### GitHub
 
-- **qishuilalala/dsh-voice-mode** · GitHub
-  - Enlace oficial: https://github.com/qishuilalala/dsh-voice-mode
-  - Por qué importa: DSH 全双工语音插件：流式语音识别入草稿、语音合成按句朗读 + 实时字幕、开口即打断；本地识别免 API Key，可选唤醒词。 · Full-duplex voice plugin for DeepSeek Harness: streaming speech-to-text into an editable draft, text-to-speech read-aloud with live captions, true barge-in and wake word; on-device ASR, no API key.
-  - Señal: ★ 35 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/qishuilalala/dsh-voice-mode" "_radar\qishuilalala-dsh-voice-mode"`
+- **PerryLink/dsh-talk** · GitHub
+  - Enlace oficial: https://github.com/PerryLink/dsh-talk
+  - Por qué importa: Voice-first session loop for DeepSeek Harness: a composer microphone button with browser/local speech-to-text (Web Speech, FunASR, whisper.cpp), a speak tool for text-to-speech replies (browser, edge-tts, piper), event announcements with mute, and speak-to-interrupt.
+  - Señal: ★ 22 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/PerryLink/dsh-talk" "_radar\perrylink-dsh-talk"`
 
 - **Azeru548/koe** · GitHub
   - Enlace oficial: https://github.com/Azeru548/koe
   - Por qué importa: Free text-to-speech studio and MCP server: Microsoft neural voices plus offline Piper, Kokoro and Kitten. Any agent gets a local MP3 in one tool call, and the audio is ephemeral by design. Use the hosted instance or run your own.
-  - Señal: ★ 0 · actualizado 2026-11-20
+  - Señal: ★ 0 · actualizado 2026-11-22
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/Azeru548/koe" "_radar\azeru548-koe"`
 
-- **21vicky/VoxGen-AI** · GitHub
-  - Enlace oficial: https://github.com/21vicky/VoxGen-AI
-  - Por qué importa: AI-Powered Multilingual Text-to-Speech Application using Python, Streamlit and Edge TTS.
-  - Señal: ★ 0 · actualizado 2026-11-20
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/21vicky/VoxGen-AI" "_radar\21vicky-voxgen-ai"`
+- **kodzonko/anyaudiobook** · GitHub
+  - Enlace oficial: https://github.com/kodzonko/anyaudiobook
+  - Por qué importa: Convert ebooks to audiobooks using Microsoft Edge's Text-to-Speech engine
+  - Señal: ★ 1 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/kodzonko/anyaudiobook" "_radar\kodzonko-anyaudiobook"`
 
-- **guim31/gladys-edge-tts** · GitHub
-  - Enlace oficial: https://github.com/guim31/gladys-edge-tts
-  - Por qué importa: Microsoft Edge neural voices (unofficial, free) as a text-to-speech provider for Gladys Assistant
-  - Señal: ★ 0 · actualizado 2026-11-20
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/guim31/gladys-edge-tts" "_radar\guim31-gladys-edge-tts"`
+- **MakerYoung/Type2Speech3** · GitHub
+  - Enlace oficial: https://github.com/MakerYoung/Type2Speech3
+  - Por qué importa: Windows text-to-speech tool (PyQt5 + Edge TTS)
+  - Señal: ★ 0 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/MakerYoung/Type2Speech3" "_radar\makeryoung-type2speech3"`
 
 - **tetherto/qvac** · GitHub
   - Enlace oficial: https://github.com/tetherto/qvac
   - Por qué importa: Open-source local AI SDK - run AI on-device with no cloud, no API keys. Supports GGUF, RAG, image, music, and video generation, speech-to-text, P2P inference, and more. Cross-platform: Linux, macOS, Windows, Android, iOS.
-  - Señal: ★ 797 · actualizado 2026-11-21
+  - Señal: ★ 815 · actualizado 2026-11-22
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/tetherto/qvac" "_radar\tetherto-qvac"`
 
 - **backblaze-labs/awesome-video-generation** · GitHub
@@ -157,7 +157,7 @@ Sin hallazgos en esta consulta.
 - **rnikadi/genaiopengateway** · GitHub
   - Enlace oficial: https://github.com/rnikadi/genaiopengateway
   - Por qué importa: Open-source GenAI gateway for every model type: LLMs, embeddings, text-to-speech, speech-to-text, realtime audio, image and video generation, plus an MCP and agent gateway. Enterprise features like SSO, RBAC, budgets, guardrails and audit are all included. Apache-2.0, with no paid tier.
-  - Señal: ★ 0 · actualizado 2026-11-20
+  - Señal: ★ 0 · actualizado 2026-11-22
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/rnikadi/genaiopengateway" "_radar\rnikadi-genaiopengateway"`
 
 ### Hugging Face
@@ -165,50 +165,50 @@ Sin hallazgos en esta consulta.
 - **ali-vilab/text-to-video-ms-1.7b** · Hugging Face
   - Enlace oficial: https://huggingface.co/ali-vilab/text-to-video-ms-1.7b
   - Por qué importa: text-to-video
-  - Señal: descargas 4729 ·
+  - Señal: descargas 4641 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/ali-vilab/text-to-video-ms-1.7b" "_radar\ali-vilab-text-to-video-ms-1-7b"`
 
 - **ali-vilab/modelscope-damo-text-to-video-synthesis** · Hugging Face
   - Enlace oficial: https://huggingface.co/ali-vilab/modelscope-damo-text-to-video-synthesis
   - Por qué importa: text-to-video
-  - Señal: descargas 272 ·
+  - Señal: descargas 275 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/ali-vilab/modelscope-damo-text-to-video-synthesis" "_radar\ali-vilab-modelscope-damo-text-to-video-synthesis"`
 
 - **Akalabeth12/Text-to-Video** · Hugging Face
   - Enlace oficial: https://huggingface.co/Akalabeth12/Text-to-Video
   - Por qué importa: Modelo abierto relacionado con video/audio.
-  - Señal: descargas 154 ·
+  - Señal: descargas 163 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/Akalabeth12/Text-to-Video" "_radar\akalabeth12-text-to-video"`
 
 - **Akalabeth12/TextImageReference-to-Video-Audio** · Hugging Face
   - Enlace oficial: https://huggingface.co/Akalabeth12/TextImageReference-to-Video-Audio
   - Por qué importa: Modelo abierto relacionado con video/audio.
-  - Señal: descargas 85 ·
+  - Señal: descargas 74 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/Akalabeth12/TextImageReference-to-Video-Audio" "_radar\akalabeth12-textimagereference-to-video-audio"`
 
 - **D-Khalid/Orpeus_Text_To_Speech** · Hugging Face
   - Enlace oficial: https://huggingface.co/D-Khalid/Orpeus_Text_To_Speech
   - Por qué importa: Modelo abierto relacionado con video/audio.
-  - Señal: descargas 1571 ·
+  - Señal: descargas 1513 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/D-Khalid/Orpeus_Text_To_Speech" "_radar\d-khalid-orpeus-text-to-speech"`
 
 - **mradermacher/Bhojpuri_text_to_speech-GGUF** · Hugging Face
   - Enlace oficial: https://huggingface.co/mradermacher/Bhojpuri_text_to_speech-GGUF
   - Por qué importa: Modelo abierto relacionado con video/audio.
-  - Señal: descargas 169 ·
+  - Señal: descargas 263 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/mradermacher/Bhojpuri_text_to_speech-GGUF" "_radar\mradermacher-bhojpuri-text-to-speech-gguf"`
+
+- **Abittee/amharic-speech-to-text-efa-v1-coreml** · Hugging Face
+  - Enlace oficial: https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1-coreml
+  - Por qué importa: automatic-speech-recognition
+  - Señal: descargas 207 ·
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/Abittee/amharic-speech-to-text-efa-v1-coreml" "_radar\abittee-amharic-speech-to-text-efa-v1-coreml"`
 
 - **Turtlemint-India/Hindi_Text_To_Speech** · Hugging Face
   - Enlace oficial: https://huggingface.co/Turtlemint-India/Hindi_Text_To_Speech
   - Por qué importa: text-to-speech
-  - Señal: descargas 125 ·
+  - Señal: descargas 129 ·
   - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/Turtlemint-India/Hindi_Text_To_Speech" "_radar\turtlemint-india-hindi-text-to-speech"`
-
-- **ZeeshanGeoPk/haitian-speech-to-text** · Hugging Face
-  - Enlace oficial: https://huggingface.co/ZeeshanGeoPk/haitian-speech-to-text
-  - Por qué importa: automatic-speech-recognition
-  - Señal: descargas 122 ·
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://huggingface.co/ZeeshanGeoPk/haitian-speech-to-text" "_radar\zeeshangeopk-haitian-speech-to-text"`
 
 ### PyPI
 
@@ -244,29 +244,29 @@ Sin hallazgos en esta consulta.
 
 ### GitHub
 
-- **anbeime/skill** · GitHub
-  - Enlace oficial: https://github.com/anbeime/skill
-  - Por qué importa: 收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across document processing, content creation, programming, machine learning, automated workflows, and many more domains.
-  - Señal: ★ 9770 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/anbeime/skill" "_radar\anbeime-skill"`
+- **Neemo07/horus-super-agent** · GitHub
+  - Enlace oficial: https://github.com/Neemo07/horus-super-agent
+  - Por qué importa: DAG-Wave orchestrator harness for OpenCode: evidence-gated planning, Graphify AST memory, file-locked parallel subagents, 8 expert skills.
+  - Señal: ★ 0 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/Neemo07/horus-super-agent" "_radar\neemo07-horus-super-agent"`
 
-- **bartoszarendt/agent-skills** · GitHub
-  - Enlace oficial: https://github.com/bartoszarendt/agent-skills
-  - Por qué importa: Portable Markdown skills for coding agents: planning, implementation, debugging, reviews, and more. For Claude Code, Codex, and OpenCode.
-  - Señal: ★ 0 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/bartoszarendt/agent-skills" "_radar\bartoszarendt-agent-skills"`
+- **dahoai/anaella-agent-plugin** · GitHub
+  - Enlace oficial: https://github.com/dahoai/anaella-agent-plugin
+  - Por qué importa: Anaella for Claude Code, Codex, Antigravity, OpenCode and other agents: the hosted MCP server plus skills. Plugin only; Anaella itself is closed source.
+  - Señal: ★ 0 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/dahoai/anaella-agent-plugin" "_radar\dahoai-anaella-agent-plugin"`
 
-- **heshengtao/ai-daw** · GitHub
-  - Enlace oficial: https://github.com/heshengtao/ai-daw
-  - Por qué importa: An AI-native digital audio workstation that enables AI to write songs, supporting MCP and Agent Skills to access any AI Harness!让AI学会写歌的AI原生数字音频工作站，支持MCP和Agent Skills接入任意AI Harness！
-  - Señal: ★ 8 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/heshengtao/ai-daw" "_radar\heshengtao-ai-daw"`
+- **naruepan2/abap-ai-opencode-toolkit** · GitHub
+  - Enlace oficial: https://github.com/naruepan2/abap-ai-opencode-toolkit
+  - Por qué importa: A portable AI teammate workspace — durable memory, lessons, and agent/skill/MCP registries that grow with the user.
+  - Señal: ★ 1 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/naruepan2/abap-ai-opencode-toolkit" "_radar\naruepan2-abap-ai-opencode-toolkit"`
 
-- **KenshienAlao/apple-design-skill** · GitHub
-  - Enlace oficial: https://github.com/KenshienAlao/apple-design-skill
-  - Por qué importa: Apple-inspired, not Apple-branded. Progressive-disclosure agent skill for platform-native UI across iOS, Android, web, and desktop. Ships tokens, motion, accessibility gates, component specs, flagship web craft, HIG mapping, scored audits, generators, and a demo. Works with OpenCode, Claude, Codex.
-  - Señal: ★ 0 · actualizado 2026-11-21
-  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/KenshienAlao/apple-design-skill" "_radar\kenshienalao-apple-design-skill"`
+- **jeffreytse/grimoire** · GitHub
+  - Enlace oficial: https://github.com/jeffreytse/grimoire
+  - Por qué importa: 🧙 Grimoire is a skills package manager for AI agents and best practices — 1000+ skills across 26 domains (engineering, law, finance, design, health, and more), each sourced from a real institution or study. Install once, and your AI routes to the right skill automatically.
+  - Señal: ★ 40 · actualizado 2026-11-22
+  - Comando propuesto (NO ejecutado): `git clone --depth 1 "https://github.com/jeffreytse/grimoire" "_radar\jeffreytse-grimoire"`
 
 - **cnproduct/renwork-brand-video-automation-kit** · GitHub
   - Enlace oficial: https://github.com/cnproduct/renwork-brand-video-automation-kit
@@ -304,19 +304,13 @@ Sin hallazgos en esta consulta.
 
 - **AI Video Editing Recommendations? : r/drones - Reddit** · Comunidades
   - Enlace oficial: https://www.reddit.com/r/drones/comments/17v1hs4/ai_video_editing_recommendations/
-  - Por qué importa: For an AI to edit videos with reasonable results, you would need to start your own AI and teach it. Maybe sometime in the future AI will be able to understand videos in a coherent way and the service would be available to the public but not now.
+  - Por qué importa: Honestly, I don’t think AI software produces great results yet with video editing. I think you’d be more satisfied with your outputs if you do them manually with easy-to-use video editing software.
   - Señal: site:reddit.com/r/drones short video editing hooks retention 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
-- **Trying to shoot/edit my videos to have more of that ... - RedditNew DJI Mini 3 Pro - Post Production Software RecommendationsPropeller rubber tips damage : r/drones - RedditBest method to generate 360 degree panoramas? : r/drones - RedditThe Irony : r/drones - RedditHas anyone ever actual bought these scam ad drones ... - Reddit** · Comunidades
+- **Trying to shoot/edit my videos to have more of that ... - RedditThe Irony : r/drones - RedditPropeller rubber tips damage : r/drones - RedditHas anyone ever actual bought these scam ad drones ... - RedditAvoid SNAPTAIN Drones : r/drones - RedditI got SCAMMED $15,000! Don't fall for this drone scam. I had ...** · Comunidades
   - Enlace oficial: https://www.reddit.com/r/drones/comments/16mp7bf/trying_to_shootedit_my_videos_to_have_more_of/
-  - Por qué importa: Looking back over the video I realize you're 100% right about me having too many superfluous shots, and a lot should have been cut out. I'm thinking the worst offending parts are the boat and the rivers/streams toward the end, thoughts? Well I'm starting to learn the proper ways to set up the drone for video and photo ops and many videos and tutorials point to "Cine" settings so that post production can add or enhance what was recorded. Hi Guys, should i change propellers on my dji mini 3 pro? The Propellers seem fine, only the rubber tips are a little scratched. Transform Image to raise horizon to centre Clear guides Contextual aware fill the sky Edit Sky with Healing Tool Change Image Size for output Match to DJI Go 4 File Size or 9000x4500 ;-) Filter Offset to check continuity if needed Fix / heal any resulting seams New Spherical Panorama from Layer Move around and apply fixes 3D Export Panorama as JPEG DONE! I wrote to my representative to oppose H.R. 2864 and he essentially told me he wouldn’t oppose it. I would bet my savings account that the banner images he has in his header were captured on DJI drones. My problem ended up being there was no way to get my photos or videos downloaded to my PC. I think they were in some sort of proprietary format and even once I found a way to copy them to my windows PC once they were there I couldn't do anything with them.
-  - Señal: site:reddit.com/r/drones short video editing hooks retention 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **New DJI Mini 3 Pro - Post Production Software Recommendations** · Comunidades
-  - Enlace oficial: https://www.reddit.com/r/drones/comments/110lb5o/new_dji_mini_3_pro_post_production_software/
-  - Por qué importa: Well I'm starting to learn the proper ways to set up the drone for video and photo ops and many videos and tutorials point to "Cine" settings so that post production can add or enhance what was recorded.
+  - Por qué importa: 70 votes, 28 comments. 206K subscribers in the drones community. Discussion of drones - Unmanned Aerial Vehicles and the flying thereof. I wrote to my representative to oppose H.R. 2864 and he essentially told me he wouldn’t oppose it. I would bet my savings account that the banner images he has in his header were captured on DJI drones. Hi Guys, should i change propellers on my dji mini 3 pro? The Propellers seem fine, only the rubber tips are a little scratched. Has anyone ever actual bought these scam ad drones on YouTube before what was the experience? You can chat with a technician 24/7, send a video clip to show your problem, or even have them walk you through problems in real time. Unless they have really changed in the last 6 months, I think they are a decent company for beginning flyers. I got SCAMMED $15,000! Don't fall for this drone scam. I had no idea this existed. I've written point form of what happend below but the video tells the full story. Hoping to get the message out there to prevent this from happening to others.
   - Señal: site:reddit.com/r/drones short video editing hooks retention 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
@@ -326,10 +320,10 @@ Sin hallazgos en esta consulta.
   - Señal: site:reddit.com/r/drones short video editing hooks retention 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
-- **Cinematic Micro Drones : r/fpv - Reddit** · Comunidades
-  - Enlace oficial: https://www.reddit.com/r/fpv/comments/9ahj38/cinematic_micro_drones/
-  - Por qué importa: The black bars appear to be necessary for stability of the footage. You can see them shrink and grow to accommodate stabilizing the video. This drone has no gimbal so all arabization is done through editing. Reply sekile • Additional comment actions
-  - Señal: site:reddit.com/r/fpv cinematic drone editing transitions 2026
+- **Has anyone ever actual bought these scam ad drones ... - Reddit** · Comunidades
+  - Enlace oficial: https://www.reddit.com/r/drones/comments/11d2843/has_anyone_ever_actual_bought_these_scam_ad/
+  - Por qué importa: Has anyone ever actual bought these scam ad drones on YouTube before what was the experience?
+  - Señal: site:reddit.com/r/drones short video editing hooks retention 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
 - **Realistic Cinematic Flight Controller Settings : r/fpv - Reddit** · Comunidades
@@ -338,9 +332,9 @@ Sin hallazgos en esta consulta.
   - Señal: site:reddit.com/r/fpv cinematic drone editing transitions 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
-- **Cinematic FPV practice on Liftoff Micro Drones : r/fpv - Reddit** · Comunidades
-  - Enlace oficial: https://www.reddit.com/r/fpv/comments/r8ropc/cinematic_fpv_practice_on_liftoff_micro_drones/
-  - Por qué importa: This looks fantastic, well done! I'm struggling to find sensible cinematic setups in Liftoff. Everything is too powerful for real life indoor flying. Could you share your rates in Liftoff, or better yet, your drone file?
+- **Cinematic Micro Drones : r/fpv - Reddit** · Comunidades
+  - Enlace oficial: https://www.reddit.com/r/fpv/comments/9ahj38/cinematic_micro_drones/
+  - Por qué importa: The black bars appear to be necessary for stability of the footage. You can see them shrink and grow to accommodate stabilizing the video. This drone has no gimbal so all arabization is done through editing. Reply sekile • Additional comment actions
   - Señal: site:reddit.com/r/fpv cinematic drone editing transitions 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
@@ -350,54 +344,13 @@ Sin hallazgos en esta consulta.
   - Señal: site:reddit.com/r/fpv cinematic drone editing transitions 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
-- **How to Use Hooks in the First 3 Seconds (2026) \| Stop Scroll ...the 3-Second Hook Rule to Double Retention - YouTubeThe 3-Second Hook Rule for 100%+ Video Retention ⏳ #shortsHow to Hook Any Viewer in the First 3 Seconds! - YouTubeYouTube Shorts Strategy 2026: Hooks, Length, Algorithm and ...YouTube Shorts Retention Secret: The 3 Hooks Strategy! # ...TikTok Watch Time: How to Improve Your First 3 Seconds** · Comunidades
-  - Enlace oficial: https://www.youtube.com/watch?v=UOs7t4-pmnw
-  - Por qué importa: May 1, 2026 · Learn how to use hooks in the first 3 seconds to stop the scroll and increase views in this complete 2026 content strategy guide. This tutorial shows you how... Oct 29, 2026 · In this Short, learn the critical hook mistake most creators make and how to fix it immediately to keep viewers watching till the end. 📌 Key takeaways: • Avoid long intros • Lead with the ... Aug 26, 2026 · Losing viewers in the first 3 seconds? In this tutorial, we break down the high-retention hook framework that stops the scroll across Shorts, TikTok, and Ree... Discover the exact 3-second hook framework top creators use to stop the scroll, skyrocket viewer retention, and trigger the algorithm on YouTube Shorts, TikTok, and Instagram Reels. In this video, I cover the 3-second thumbnail, the new YouTube Shorts length limit, the 2026 YouTube Shorts algorithm changes, and what the YouTube Shorts monetization... Sep 24, 2026 · YouTube Shorts Retention Secret: The 3 Hooks Strategy! 📈Are your YouTube Shorts dropping off in retention? Stop losing viewers after the first few seconds! ... 2 days ago · RELATED TOPICS: TikTok watch time, how to get more views on TikTok, TikTok video hooks, first three seconds of a video, audience retention, short-form video strategy, TikTok content ideas, video ...
-  - Señal: site:youtube.com shorts retention hooks first 3 seconds 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **the 3-Second Hook Rule to Double Retention - YouTubeThe 3-Second Hook Rule for 100%+ Video Retention ⏳ #shortsHow to Hook Any Viewer in the First 3 Seconds! - YouTubeYouTube Shorts Strategy 2026: Hooks, Length, Algorithm and ...YouTube Shorts Retention Secret: The 3 Hooks Strategy! # ...TikTok Watch Time: How to Improve Your First 3 Seconds** · Comunidades
-  - Enlace oficial: https://www.youtube.com/watch?v=VDLd_vlDdOo
-  - Por qué importa: Oct 29, 2026 · In this Short, learn the critical hook mistake most creators make and how to fix it immediately to keep viewers watching till the end. 📌 Key takeaways: • Avoid long intros • Lead with the ... Aug 26, 2026 · Losing viewers in the first 3 seconds? In this tutorial, we break down the high-retention hook framework that stops the scroll across Shorts, TikTok, and Ree... Discover the exact 3-second hook framework top creators use to stop the scroll, skyrocket viewer retention, and trigger the algorithm on YouTube Shorts, TikTok, and Instagram Reels. In this video, I cover the 3-second thumbnail, the new YouTube Shorts length limit, the 2026 YouTube Shorts algorithm changes, and what the YouTube Shorts monetization... Sep 24, 2026 · YouTube Shorts Retention Secret: The 3 Hooks Strategy! 📈Are your YouTube Shorts dropping off in retention? Stop losing viewers after the first few seconds! ... 2 days ago · RELATED TOPICS: TikTok watch time, how to get more views on TikTok, TikTok video hooks, first three seconds of a video, audience retention, short-form video strategy, TikTok content ideas, video ...
-  - Señal: site:youtube.com shorts retention hooks first 3 seconds 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **The 3-Second Hook Rule for 100%+ Video Retention ⏳ #shorts** · Comunidades
-  - Enlace oficial: https://www.youtube.com/shorts/GF0Ekxy1_VE
-  - Por qué importa: Aug 26, 2026 · Losing viewers in the first 3 seconds? In this tutorial, we break down the high-retention hook framework that stops the scroll across Shorts, TikTok, and Ree...
-  - Señal: site:youtube.com shorts retention hooks first 3 seconds 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **How to Hook Any Viewer in the First 3 Seconds! - YouTubeYouTube Shorts Strategy 2026: Hooks, Length, Algorithm and ...YouTube Shorts Retention Secret: The 3 Hooks Strategy! # ...TikTok Watch Time: How to Improve Your First 3 Seconds** · Comunidades
-  - Enlace oficial: https://www.youtube.com/watch?v=fPfPOQYl924
-  - Por qué importa: Discover the exact 3-second hook framework top creators use to stop the scroll, skyrocket viewer retention, and trigger the algorithm on YouTube Shorts, TikTok, and Instagram Reels. In this video, I cover the 3-second thumbnail, the new YouTube Shorts length limit, the 2026 YouTube Shorts algorithm changes, and what the YouTube Shorts monetization... Sep 24, 2026 · YouTube Shorts Retention Secret: The 3 Hooks Strategy! 📈Are your YouTube Shorts dropping off in retention? Stop losing viewers after the first few seconds! ... 2 days ago · RELATED TOPICS: TikTok watch time, how to get more views on TikTok, TikTok video hooks, first three seconds of a video, audience retention, short-form video strategy, TikTok content ideas, video ...
-  - Señal: site:youtube.com shorts retention hooks first 3 seconds 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **Content creation insights for 2026 \| TikTokCapCut video editing trends for creators 2026 \| TikTokTikTok Next 2026 Trend ReportTikTok Next 2026 Trend Report: Top Trends & ForecastIntroducing TikTok Next 2026: Our Trend Forecast for ...TikTok World ‘26: Turning Discovery Into Business Growth with ...Create TikTok effects \| TikTok effect house** · Comunidades
-  - Enlace oficial: https://www.tiktok.com/@k.g.f9118/video/7697234699797810452
-  - Por qué importa: Content creation insights for 2026 Lead Quick, actionable insights to help creators prepare content for 2026, focused on short vertical video, efficient editing, and platform-native approaches. Lead CapCut video editing trends are shaping how creators produce short comedy and viral clips. This guide highlights current CapCut editing moves, transitions, and stylistic choices creators use to increase engagement and fit platform search intent. Leveraging our own AI powered solutions, TikTok One Insights Spotlight and TikTok Market Scope, we were able to test and validate our TikTok Next 2026 trend hypotheses against real-time data and brand interactions. In 2026, audiences will realign through the chaos to forge new realities together. After a year of delulu and quiet disengagement, people are craving grounding through honesty, community, and shared experience. Jan 14, 2026 · This year, we'll see trends rooted in our Irreplaceable Instinct, representing a shift toward the curiosity, conviction, and care that connect us. Our 2026 Trend Signals were powered by AI and grounded in human instinct – contextualized by how our community is feeling about the state of the world. May 13, 2026 · The tool works by interpreting campaign briefs and analyzing TikTok creator profiles to quickly deliver a curated list of relevant creators to work with, unlocking faster and more efficient AI-powered discovery. Create fun TikTok effects, filters, games, and interactive AR experiences with TikTok effect house desktop app. Start creating your own TikTok effects today.
-  - Señal: site:tiktok.com creator vertical video editing trends 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **CapCut video editing trends for creators 2026 \| TikTok** · Comunidades
-  - Enlace oficial: https://www.tiktok.com/@mr.rj870/video/7678350342890786066
-  - Por qué importa: Lead CapCut video editing trends are shaping how creators produce short comedy and viral clips. This guide highlights current CapCut editing moves, transitions, and stylistic choices creators use to increase engagement and fit platform search intent.
-  - Señal: site:tiktok.com creator vertical video editing trends 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **TikTok Next 2026 Trend Report** · Comunidades
-  - Enlace oficial: https://ads.tiktok.com/business/library/TikTok_Next_2026_Trend_Report.pdf
-  - Por qué importa: Leveraging our own AI powered solutions, TikTok One Insights Spotlight and TikTok Market Scope, we were able to test and validate our TikTok Next 2026 trend hypotheses against real-time data and brand interactions.
-  - Señal: site:tiktok.com creator vertical video editing trends 2026
-  - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
-
-- **TikTok Next 2026 Trend Report: Top Trends & Forecast** · Comunidades
-  - Enlace oficial: https://ads.tiktok.com/business/en-US/next
-  - Por qué importa: In 2026, audiences will realign through the chaos to forge new realities together. After a year of delulu and quiet disengagement, people are craving grounding through honesty, community, and shared experience.
-  - Señal: site:tiktok.com creator vertical video editing trends 2026
+- **Cinematic FPV practice on Liftoff Micro Drones : r/fpv - Reddit** · Comunidades
+  - Enlace oficial: https://www.reddit.com/r/fpv/comments/r8ropc/cinematic_fpv_practice_on_liftoff_micro_drones/
+  - Por qué importa: Liftoff: Micro Drones is now on Steam. It has some interesting indoor locations that are fun to practice for tiny whoops and cinewhoops. But so far the largest quad there is a 2-inch, which is what I'm using in this video. Reply reply IsolatedHMD •
+  - Señal: site:reddit.com/r/fpv cinematic drone editing transitions 2026
   - Comando propuesto (NO ejecutado): `No instalar; convertir en regla editorial y validar antes de aplicarla.`
 
 ## Fuentes con error
 
-- Ninguna.
+- Comunidades · site:youtube.com shorts retention hooks first 3 seconds 2026: DDGSException: No results found.
+- Comunidades · site:tiktok.com creator vertical video editing trends 2026: DDGSException: No results found.

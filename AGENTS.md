@@ -407,14 +407,27 @@ Obligatorio para cada video nuevo. La plantilla `vertical-pro` ya trae el LOOK a
 
 ---
 
+## 16. Fábrica multi-agente y motor de render
+
+- `_shared/agentes/` contiene 20 agentes locales con salida estructurada. `orquestador.py` los ejecuta en cadena con un tablero compartido, guarda el resultado en `_shared/cache/agentes/ejecuciones/` e inyecta su aporte en `fabrica_diaria.prompt_generacion(...)`.
+- Los agentes son deterministas, funcionan sin APIs de pago y respetan la identidad del canal: guion, gancho, locución, estilo, referencias medidas, B-roll, cámara, edición, diseño, cartoon/3D, QA, metadata, aprendizaje, arquitectura y poda.
+- `AURA_MULTIAGENTE=0` desactiva el orquestador y deja el flujo anterior como fallback. `AURA_MODO_PRUEBA=1` evita confirmaciones por Telegram.
+- Los cambios estructurales (crear agentes nuevos o podar agentes) requieren confirmación por Telegram con botones SI/NO. Telegram usa `_shared/agentes/telegram_decisiones.py`, reutiliza las credenciales de `notificador_telegram.py` y jamás elimina nada sin respaldo previo.
+- Las correcciones urgentes (duración >60 s, solapes o texto cortado) se aplican de inmediato y se avisan por Telegram; las no críticas se proponen y esperan confirmación.
+- `_shared/factory/render_engine.py` unifica caché por hash de archivos, Playwright+FFmpeg y Hyperframes. `AURA_RENDER_MOTOR=auto|playwright|hyperframes` elige el backend; `auto` prueba Playwright y cae a Hyperframes.
+- `render_engine.recortar_duracion(...)` reescala `data-duration` y `data-start` cuando la voz empuja el video sobre 60 s, avisa por Telegram y fuerza re-render.
+- Prueba rápida: `PYTHONPATH=_shared python -m agentes.orquestador --idea "tema" --prueba` y `python _shared/factory/render_engine.py <proyecto> --motor auto`.
+
+---
+
 ## Mejoras Continuas de Calidad y Diseño
 
-Actualizado automáticamente el 2026-11-21 por `weekly_upgrade_radar.py`. Solo convierte señales públicas en reglas editoriales; no instala repositorios ni paquetes.
+Actualizado automáticamente el 2026-11-22 por `weekly_upgrade_radar.py`. Solo convierte señales públicas en reglas editoriales; no instala repositorios ni paquetes.
 
 #### Ritmo visual
 - Cambia de plano, ángulo, zoom o elemento HUD cada 2–3 segundos para sostener la retención.
 - Usa GSAP con eases con nombre (`expo.out`, `power4.out`, `back.out(1.3)`) y stagger breve; prohíbete `ease:"none"` y `ease:"linear"`.
-- Mantén la plantilla LOOK fija con una sola paleta por proyecto, tres zonas exclusivas y captions karaoke sincronizadas.
+- Mantén la plantilla LOOK fija, un solo acento, safe zones y captions karaoke sincronizadas.
 
 #### Ganchos
 - El primer fotograma y la primera línea deben exponer tensión, beneficio o dato concreto antes de 1.5 s.
@@ -428,18 +441,18 @@ Actualizado automáticamente el 2026-11-21 por `weekly_upgrade_radar.py`. Solo c
 
 #### Señales de la semana · ritmo visual y edición
 
+- Cherireal7/tibeb-video-studio: Tibeb: a local-first desktop studio for short-form video (projects, asset library, Remotion templates, editor hand-off) (https://github.com/Cherireal7/tibeb-video-studio)
 - inurun/video-admin-template: Admin UI + Remotion stub template for page/TTS editing and video render (https://github.com/inurun/video-admin-template)
-- wrg32786/aigent-talking-head: Free, open-source talking-head video editor: turn one phone clip into a captioned reel for TikTok, Reels and Shorts. 51 effects, 29 motion graphics, 56 transitions, local Whisper captions, kinetic typography and an MCP server. Works with Claude Code, Cursor, C (https://github.com/wrg32786/aigent-talking-head)
-- nachoweb3/elite-editor: Free local-first video editor with an editable timeline, reviewed AI assistance, GPU effects and local processing. Built on OpenCut. (https://github.com/nachoweb3/elite-editor)
+- NirjharBhattacharjee/mockingbird-studio: A Claude Code plugin that turns your videos into short-form edits (Shorts, Reels, TikTok) with mockingbird: hooks, retention editing, word-by-word captions, b-roll and sound. (https://github.com/NirjharBhattacharjee/mockingbird-studio)
 
 #### Señales de la semana · ganchos y retención
 
-- wrg32786/aigent-talking-head: Free, open-source talking-head video editor: turn one phone clip into a captioned reel for TikTok, Reels and Shorts. 51 effects, 29 motion graphics, 56 transitions, local Whisper captions, kinetic typography and an MCP server. Works with Claude Code, Cursor, C (https://github.com/wrg32786/aigent-talking-head)
-- nachoweb3/elite-editor: Free local-first video editor with an editable timeline, reviewed AI assistance, GPU effects and local processing. Built on OpenCut. (https://github.com/nachoweb3/elite-editor)
+- Cherireal7/tibeb-video-studio: Tibeb: a local-first desktop studio for short-form video (projects, asset library, Remotion templates, editor hand-off) (https://github.com/Cherireal7/tibeb-video-studio)
 - NirjharBhattacharjee/mockingbird-studio: A Claude Code plugin that turns your videos into short-form edits (Shorts, Reels, TikTok) with mockingbird: hooks, retention editing, word-by-word captions, b-roll and sound. (https://github.com/NirjharBhattacharjee/mockingbird-studio)
+- riccivr/retention-analyzer: Short-Form Video Retention & Editing Analyzer (A/B Outlier Engine) for TikTok and Reels (https://github.com/riccivr/retention-analyzer)
 
 #### Señales de la semana · estilo y diseño
 
-- gg320324492-lgtm/minimax-h3-studio: Local AI video studio: MiniMax-H3 (ComfyUI) generation + Remotion programmatic composition — templates, timeline contracts, QA gates, synthesized audio (https://github.com/gg320324492-lgtm/minimax-h3-studio)
-- inurun/video-admin-template: Admin UI + Remotion stub template for page/TTS editing and video render (https://github.com/inurun/video-admin-template)
-- XuHo-IT/Content-Agent-Kit: Nói với AI bằng tiếng Việt → tìm chủ đề hot, soi đối thủ, viết bài, dựng video 9:16 với 130 template (có video kể chuyện, giọng đọc tiếng Việt), duyệt rồi mới đăng; kèm bộ công cụ chạy quảng cáo Facebook cho shop. Cài làm skill cho Claude Code hoặc dùng với An (https://github.com/XuHo-IT/Content-Agent-Kit)
+- thecgaigroup/reelsmith: Reelsmith: a code-built video skill (HyperFrames + Remotion templates, brand kit, captions, platform exports) for AI agents. (https://github.com/thecgaigroup/reelsmith)
+- Cherireal7/tibeb-video-studio: Tibeb: a local-first desktop studio for short-form video (projects, asset library, Remotion templates, editor hand-off) (https://github.com/Cherireal7/tibeb-video-studio)
+- agusnuriman/meridian-glow-music-video: Remotion music visualizer template — MERIDIAN GLOW. https://youtu.be/kKuLQNySGNY (https://github.com/agusnuriman/meridian-glow-music-video)
