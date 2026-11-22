@@ -1,0 +1,37 @@
+﻿# Secretos, tokens y credenciales (en raiz o subcarpetas)
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+**/.env.example
+*token*
+*secret*
+*credentials*
+*client_secret*
+service_account*.json
+*oauth*.json
+
+# Entornos, logs, respaldos, cache y multimedia pesada
+__pycache__/
+*.py[cod]
+*.bak
+*.log
+.venv/
+venv/
+env/
+*.mp4
+*.mov
+*.wav
+*.mp3
+renders/
+cache/
+tmp/
+
+# Carpetas de proyectos/renders generados, snapshots y respaldos JSON
+*_2026*/
+.hyperframes/
+snapshots/
+artifacts/
+*.bak.json
+node_modules/

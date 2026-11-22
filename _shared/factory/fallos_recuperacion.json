@@ -1,0 +1,44 @@
+{
+  "fallos": [
+    {
+      "fecha": "2026-11-20",
+      "detectado_en": "2026-11-21T04:12:16Z",
+      "mensaje": "fabrica_diaria devolvió exit=['--fecha', '2026-11-20', '--idioma', 'en', '--dry-run']; se continúa con la siguiente jornada"
+    },
+    {
+      "fecha": "2026-11-20",
+      "detectado_en": "2026-11-21T05:04:51Z",
+      "mensaje": "fabrica_diaria devolvió exit=1; se continúa con la siguiente jornada"
+    },
+    {
+      "fecha": "2026-11-21",
+      "detectado_en": "2026-11-21T19:23:43Z",
+      "mensaje": "UnboundLocalError: cannot access local variable 'resultado' where it is not associated with a value"
+    },
+    {
+      "fecha": "2026-11-22",
+      "detectado_en": "2026-11-21T19:23:45Z",
+      "mensaje": "UnboundLocalError: cannot access local variable 'resultado' where it is not associated with a value"
+    },
+    {
+      "fecha": "2026-11-21",
+      "detectado_en": "2026-11-21T19:27:33Z",
+      "mensaje": "UnboundLocalError: cannot access local variable 'resultado' where it is not associated with a value"
+    },
+    {
+      "fecha": "2026-11-22",
+      "detectado_en": "2026-11-21T19:27:35Z",
+      "mensaje": "UnboundLocalError: cannot access local variable 'resultado' where it is not associated with a value"
+    },
+    {
+      "fecha": "2026-11-21",
+      "detectado_en": "2026-11-21T20:37:23Z",
+      "mensaje": "fabrica_diaria devolvió exit=1; se continúa con la siguiente jornada"
+    },
+    {
+      "fecha": "2026-11-22",
+      "detectado_en": "2026-11-21T20:37:25Z",
+      "mensaje": "fabrica_diaria devolvió exit=1; se continúa con la siguiente jornada"
+    }
+  ]
+}

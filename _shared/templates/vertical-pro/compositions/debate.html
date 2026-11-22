@@ -1,0 +1,106 @@
+<template>
+  <link rel="stylesheet" href="assets/styles/estilos.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      font-family: "Space Grotesk", sans-serif;
+    }
+    #debate-card {
+      box-sizing: border-box;
+      display: flex;
+      gap: 24px;
+      padding: 22px;
+      border: 2px solid var(--hairline);
+      border-radius: 18px;
+      background: rgba(0, 0, 0, 0.35);
+    }
+    .debate-option {
+      box-sizing: border-box;
+      width: 384px;
+      height: 212px;
+      padding: 18px;
+      border: 2px solid var(--hairline);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+    .debate-option.b {
+      border-color: var(--accent);
+    }
+    .debate-label {
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .debate-text {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
+    .debate-versus {
+      position: absolute;
+      left: 50%;
+      top: 104px;
+      width: 64px;
+      height: 64px;
+      margin-left: -32px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--ground);
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 64px;
+      text-align: center;
+    }
+  </style>
+
+  <div id="root" data-composition-id="debate" data-width="1080" data-height="1920" data-duration="6">
+    <div
+      id="debate-card"
+      class="clip"
+      data-zone="main"
+      data-start="0"
+      data-duration="6"
+      data-track-index="6"
+      style="position: absolute; left: 80px; top: 760px; width: 840px; height: 260px; z-index: 6"
+    >
+      <div id="debate-option-a" class="debate-option">
+        <div class="debate-label">Opción A</div>
+        <div id="debate-text-a" class="debate-text">Ajuste original</div>
+      </div>
+      <div id="debate-option-b" class="debate-option b">
+        <div class="debate-label">Opción B</div>
+        <div id="debate-text-b" class="debate-text">Cambio propuesto</div>
+      </div>
+      <div id="debate-versus" class="debate-versus">VS</div>
+    </div>
+  </div>
+
+  <script>
+    const raiz = document.getElementById("root");
+    const duracion = parseFloat(raiz.getAttribute("data-duration") || "6");
+    const opcionA = document.documentElement.getAttribute("data-debate-a") || "Ajuste original";
+    const opcionB = document.documentElement.getAttribute("data-debate-b") || "Cambio propuesto";
+    document.getElementById("debate-text-a").textContent = opcionA;
+    document.getElementById("debate-text-b").textContent = opcionB;
+
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#debate-card", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power4.out" }, 0.12);
+    tl.fromTo("#debate-option-a", { x: -28, opacity: 0 }, { x: 0, opacity: 1, duration: 0.42, ease: "expo.out" }, 0.2);
+    tl.fromTo("#debate-option-b", { x: 28, opacity: 0 }, { x: 0, opacity: 1, duration: 0.42, ease: "expo.out" }, 0.27);
+    tl.fromTo("#debate-versus", { scale: 0.6, rotation: -18 }, { scale: 1, rotation: 0, duration: 0.4, ease: "back.out(1.3)" }, 0.42);
+    for (let tiempo = 3.5; tiempo < duracion; tiempo += 3.5) {
+      tl.fromTo("#debate-versus", { scale: 1 }, { scale: 1.12, duration: 0.16, ease: "power2.out" }, tiempo);
+      tl.to("#debate-versus", { scale: 1, duration: 0.26, ease: "power2.inOut" }, tiempo + 0.16);
+    }
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["debate"] = tl;
+  </script>
+</template>

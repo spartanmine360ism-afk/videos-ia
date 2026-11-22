@@ -1,0 +1,73 @@
+{
+  "id": "vertical-pro",
+  "name": "Vertical Pro — Motion Director",
+  "categoria": "tips",
+  "titulo": "",
+  "estilo_id": "1000350998",
+  "estilo": {
+    "id": "1000350998",
+    "referencia": "1000350998",
+    "nombre": "Tutorial paso a paso con interfaz",
+    "familia": "tutorial"
+  },
+  "duracion_maxima_s": 60.0,
+  "paleta": {
+    "clave": "tips",
+    "nombre": "Tips técnicos DJI / Configuración",
+    "accent": "#00E5FF",
+    "accent_2": "#F4FBFF",
+    "ground": "#0B111A",
+    "surface": "#101A27",
+    "ink": "#F4FBFF",
+    "font_display": "Outfit"
+  },
+  "zonas_visuales": {
+    "superior": {
+      "top": 200,
+      "bottom": 340,
+      "left": 80,
+      "right": 150,
+      "contenido": "subtítulo dinámico corto, píldora de sección y puntos de progreso"
+    },
+    "central": {
+      "top": 380,
+      "bottom": 1260,
+      "left": 80,
+      "right": 150,
+      "contenido": "tarjeta protagonista animada con SVG vectoriales y micro-estímulos"
+    },
+    "inferior_vacia_desde": 1320
+  },
+  "curva_edicion": {
+    "gancho": {
+      "desde_s": 0,
+      "hasta_s": 4,
+      "corte_min_s": 0.9,
+      "corte_max_s": 1.3
+    },
+    "desarrollo": {
+      "desde_s": 4,
+      "corte_min_s": 2.0,
+      "corte_max_s": 2.5
+    },
+    "remate": {
+      "desde_s_relativo": -4,
+      "sfx": "assets/audio/sfx/hit.mp3",
+      "volumen": 0.35
+    },
+    "micro_estimulo": {
+      "cada_s": 3.5,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "zoom_duracion_s": [
+        0.16,
+        0.34
+      ],
+      "destello": "direccional",
+      "sfx": "assets/audio/sfx/click-soft.mp3",
+      "volumen": 0.18
+    }
+  }
+}

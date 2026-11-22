@@ -1,0 +1,12 @@
+{
+  "actualizado_en": "2026-11-21T20:48:38Z",
+  "dias_consultados": 90,
+  "fuente": "YouTube Analytics API v2 · channel==MINE · Shorts",
+  "total_ganadores": 0,
+  "ganadores": [],
+  "experimentos": [],
+  "ganador_ab": {},
+  "errores": [
+    "RuntimeError: youtube_token.json sin scope yt-analytics.readonly"
+  ]
+}

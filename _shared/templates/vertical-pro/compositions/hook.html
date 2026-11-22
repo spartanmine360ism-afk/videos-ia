@@ -1,0 +1,98 @@
+<template>
+  <link rel="stylesheet" href="assets/styles/estilos.css" />
+  <style>
+    :root { --accent:#00e5ff; --accent-2:#f4fbff; --ground:#0b111a; --surface:#101a27; --ink:#f4fbff; --muted:rgba(244,251,255,0.62); --hairline:rgba(244,251,255,0.12); --font-display:"Outfit",sans-serif; }
+    #root { position:absolute; inset:0; overflow:hidden; background:var(--ground); font-family:"Inter",sans-serif; }
+    #bg-plate { position:absolute; inset:-60px; z-index:0; background:radial-gradient(circle at 22% 18%, var(--surface) 0%, transparent 46%), radial-gradient(circle at 78% 72%, var(--accent) 0%, transparent 42%), var(--ground); opacity:.95; transform-origin:50% 50%; }
+    #broll-slot { position:absolute; inset:0; z-index:1; overflow:hidden; }
+    #broll-slot video { width:100%; height:100%; object-fit:cover; opacity:.28; }
+    #bg-grid { position:absolute; left:-90px; top:-90px; width:1260px; height:2100px; z-index:1; }
+    #bg-grid svg { width:100%; height:100%; }
+    #bg-veil { position:absolute; inset:0; z-index:2; background:rgba(10,12,16,0.45); }
+    #hook-stage { position:absolute; inset:0; z-index:4; transform-origin:50% 35%; }
+    #light-sweep { position:absolute; left:-160px; top:260px; width:420px; height:980px; z-index:9; opacity:0; pointer-events:none; background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,0) 35%,rgba(255,255,255,.24) 50%,rgba(255,255,255,0) 65%,transparent 100%); mix-blend-mode:screen; }
+    #micro-flash { position:absolute; left:-200px; top:460px; width:220px; height:680px; z-index:9; opacity:0; pointer-events:none; background:linear-gradient(90deg,transparent,var(--accent),transparent); mix-blend-mode:screen; }
+    #zone-main { position:absolute; left:80px; top:380px; width:770px; height:880px; overflow:hidden; }
+    #hero-card { position:absolute; left:0; top:70px; width:770px; height:760px; border:2px solid var(--hairline); border-radius:28px; background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.12)); overflow:hidden; opacity:1; transform:scale(0.88); transform-origin:50% 35%; }
+    #hero-kicker { position:absolute; left:36px; top:34px; font-family:"Space Grotesk",sans-serif; font-size:22px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); opacity:1; }
+    #hero-title { position:absolute; left:36px; top:82px; width:690px; font-family:var(--font-display); font-size:76px; font-weight:800; line-height:1.06; letter-spacing:-.02em; color:var(--ink); opacity:1; }
+    #hero-title .accent { color:var(--accent); }
+    #hero-sub { position:absolute; left:36px; top:290px; width:620px; font-size:28px; font-weight:600; line-height:1.18; color:var(--muted); opacity:1; }
+    #hero-svg { position:absolute; left:36px; top:390px; width:698px; height:300px; }
+    #metric-row { position:absolute; left:36px; top:690px; width:698px; display:flex; gap:16px; }
+    .metric { flex:1; padding:14px 16px; border:1px solid var(--hairline); border-radius:14px; background:rgba(0,0,0,.18); }
+    .metric-label { font-family:"Space Grotesk",sans-serif; font-size:18px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+    .metric-value { margin-top:8px; font-family:var(--font-display); font-size:42px; font-weight:800; letter-spacing:-.03em; color:var(--ink); }
+    .metric-value .accent { color:var(--accent); }
+    .ghost { position:absolute; left:80px; width:520px; height:10px; background:var(--accent); opacity:0; z-index:6; }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-duration="6">
+    <div id="bg-plate" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
+    <div id="broll-slot" class="clip" data-start="0" data-duration="6" data-track-index="0" data-media-vault></div>
+    <div id="bg-grid" class="clip" data-start="0" data-duration="6" data-track-index="0" aria-hidden="true">
+      <svg viewBox="0 0 1260 2100" fill="none"><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" stroke="rgba(244,251,255,0.08)" stroke-width="1"/></pattern></defs><rect width="1260" height="2100" fill="url(#g)"/><path d="M0 420H1260M0 1260H1260" stroke="rgba(244,251,255,0.06)" stroke-width="2"/></svg>
+    </div>
+    <div id="bg-veil" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
+    <div id="hook-stage">
+      <div id="light-sweep" data-layout-ignore></div>
+      <div id="micro-flash" data-layout-ignore></div>
+      <div id="ghost-a" class="ghost" data-layout-ignore style="top:520px;"></div>
+      <div id="ghost-b" class="ghost" data-layout-ignore style="top:760px;width:380px;"></div>
+      <div id="zone-main" data-zone="main" style="left:80px;top:380px;width:770px;height:880px;">
+        <div id="hero-card" class="clip" data-zone="main" data-start="0" data-duration="6" data-track-index="0" style="left:0;top:70px;width:770px;height:760px;">
+          <div id="hero-kicker">AURA DRONES</div>
+          <div id="hero-title">Vuela con <span class="accent">control</span></div>
+          <div id="hero-sub">Tres ajustes claros para una toma más estable.</div>
+          <svg id="hero-svg" viewBox="0 0 698 300" fill="none" aria-hidden="true">
+            <path id="arc" d="M40 250 C170 80, 360 80, 520 210" stroke="var(--accent)" stroke-width="8" stroke-linecap="round"/>
+            <path id="arc2" d="M120 255 C220 150, 360 150, 470 235" stroke="rgba(244,251,255,0.35)" stroke-width="4" stroke-linecap="round"/>
+            <g id="drone" transform="translate(520 170)">
+              <rect x="-46" y="-14" width="92" height="28" rx="10" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+              <path d="M-70 -26H-28M28 -26H70M-70 26H-28M28 26H70" stroke="var(--accent-2)" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="-70" cy="-26" r="10" stroke="var(--accent)" stroke-width="3"/><circle cx="70" cy="-26" r="10" stroke="var(--accent)" stroke-width="3"/><circle cx="-70" cy="26" r="10" stroke="var(--accent)" stroke-width="3"/><circle cx="70" cy="26" r="10" stroke="var(--accent)" stroke-width="3"/>
+            </g>
+            <circle id="target" cx="560" cy="110" r="22" stroke="var(--accent-2)" stroke-width="4"/>
+            <circle cx="560" cy="110" r="6" fill="var(--accent)"/>
+          </svg>
+          <div id="metric-row">
+            <div class="metric"><div class="metric-label">Estabilidad</div><div class="metric-value"><span id="m1">0</span><span class="accent">%</span></div></div>
+            <div class="metric"><div class="metric-label">Respuesta</div><div class="metric-value"><span id="m2">0</span><span class="accent">ms</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tl = gsap.timeline({ paused: true });
+    var arc = document.getElementById("arc");
+    var arc2 = document.getElementById("arc2");
+    [arc, arc2].forEach(function (p) { var l = p.getTotalLength(); p.style.strokeDasharray = l; p.style.strokeDashoffset = l; });
+    tl.fromTo("#bg-plate", { scale: 1.08 }, { scale: 1, duration: 6, ease: "power2.inOut" }, 0);
+    // Frame 0 visible: hero ya presente al 88%, spring rápido a 100% en ~6 frames (0.2s @30fps)
+    tl.fromTo("#hero-card", { scale: 0.88, opacity: 1, y: 0 }, { scale: 1, opacity: 1, y: 0, duration: 0.2, ease: "back.out(2.2)", immediateRender: false }, 0);
+    tl.fromTo("#hook-stage", { scale: 1.03 }, { scale: 1, duration: 0.45, ease: "power2.out", immediateRender: false }, 0);
+    tl.fromTo("#light-sweep", { x: -520, opacity: 0 }, { x: 980, opacity: 0.55, duration: 0.9, ease: "power2.inOut" }, 0.02);
+    tl.to("#light-sweep", { opacity: 0, duration: 0.2 }, 0.85);
+    tl.fromTo("#hero-kicker", { y: 8 }, { y: 0, duration: 0.28, ease: "power4.out" }, 0.04);
+    tl.fromTo("#hero-title", { y: 10 }, { y: 0, duration: 0.32, ease: "expo.out" }, 0.05);
+    tl.fromTo("#hero-sub", { y: 8 }, { y: 0, duration: 0.3, ease: "power4.out" }, 0.08);
+    tl.to(arc, { strokeDashoffset: 0, duration: 1.1, ease: "power3.out" }, 0.45);
+    tl.to(arc2, { strokeDashoffset: 0, duration: 1.2, ease: "power2.out" }, 0.55);
+    tl.fromTo("#drone", { x: -120, y: 40, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: 0.9, ease: "back.out(1.2)" }, 0.5);
+    tl.fromTo("#target", { scale: 0.4, opacity: 0, transformOrigin: "50% 50%" }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.7)" }, 0.72);
+    tl.fromTo(".metric", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: "power4.out" }, 0.7);
+    tl.to({ v: 0 }, { v: 98, duration: 0.9, ease: "power2.out", onUpdate: function () { document.getElementById("m1").textContent = Math.round(this.targets()[0].v); } }, 0.8);
+    tl.to({ v: 0 }, { v: 24, duration: 0.8, ease: "power2.out", onUpdate: function () { document.getElementById("m2").textContent = Math.round(this.targets()[0].v); } }, 0.86);
+    function micro(t, y) {
+      tl.to("#hero-card", { scale: 1.1, duration: 0.16, ease: "power2.out", transformOrigin: "50% 50%" }, t);
+      tl.to("#hero-card", { scale: 1, duration: 0.34, ease: "power2.inOut" }, t + 0.16);
+      tl.fromTo("#micro-flash", { x: -220, opacity: 0, y: y || 0 }, { x: 980, opacity: 0.35, duration: 0.45, ease: "power2.out" }, t);
+      tl.to("#micro-flash", { opacity: 0, duration: 0.12 }, t + 0.42);
+    }
+    micro(3.5, 0);
+    tl.fromTo("#ghost-a", { x: -80, opacity: 0 }, { x: 220, opacity: 0.18, duration: 0.28, ease: "power3.out" }, 2.3);
+    tl.to("#ghost-a", { opacity: 0, duration: 0.2 }, 2.58);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

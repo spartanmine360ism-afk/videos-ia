@@ -1,0 +1,95 @@
+<template>
+  <link rel="stylesheet" href="assets/styles/estilos.css" />
+  <style>
+    :root {
+      --accent: #00e5ff;
+      --ink: #f4fbff;
+      --muted: rgba(244, 251, 255, 0.62);
+      --hairline: rgba(244, 251, 255, 0.14);
+      --font-display: "Outfit", sans-serif;
+    }
+    #root { position:absolute; inset:0; overflow:hidden; font-family:"Inter",sans-serif; }
+    #zone-superior { position:absolute; left:80px; top:200px; width:770px; height:140px; z-index:8; overflow:hidden; }
+    #section-pill {
+      position:absolute; left:0; top:0; height:34px; padding:0 14px; border:1px solid var(--hairline);
+      border-radius:999px; display:inline-flex; align-items:center; gap:8px;
+      font-family:"Space Grotesk",sans-serif; font-size:20px; font-weight:700; letter-spacing:0.12em;
+      text-transform:uppercase; color:var(--ink); background:rgba(0,0,0,0.18);
+    }
+    #section-pill-dot { width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; }
+    #progress-dots { position:absolute; right:0; top:6px; display:flex; gap:10px; }
+    .progress-dot { width:10px; height:10px; border-radius:50%; background:rgba(244,251,255,0.22); border:1px solid rgba(244,251,255,0.18); }
+    .progress-dot.active { background:var(--accent); box-shadow:0 0 0 4px rgba(0,229,255,0.12); }
+    #progress-bar-wrap { position:absolute; left:0; top:-8px; width:770px; height:4px; background:rgba(244,251,255,0.12); border-radius:999px; overflow:hidden; }
+    #progress-bar { width:100%; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); transform-origin:0 50%; transform:scaleX(0); }
+    .caption-block { position:absolute; left:0; top:44px; width:770px; height:88px; overflow:hidden; visibility:hidden; }
+    .caption-line { display:block; white-space:nowrap; font-family:var(--font-display); font-size:46px; font-weight:800; line-height:1.16; letter-spacing:-0.02em; color:var(--ink); }
+    .word { display:inline-block; color:var(--ink); transform-origin:50% 100%; }
+    .word.accent { color:var(--accent); }
+  </style>
+
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="zone-superior" data-zone="caption" style="left:80px;top:200px;width:770px;height:140px;">
+      <div id="progress-bar-wrap" data-layout-ignore aria-hidden="true"><div id="progress-bar"></div></div>
+      <div id="section-pill" data-layout-ignore><span id="section-pill-dot"></span><span id="section-pill-text">PASO 01</span></div>
+      <div id="progress-dots" data-layout-ignore aria-hidden="true">
+        <span class="progress-dot" id="dot-1"></span><span class="progress-dot" id="dot-2"></span><span class="progress-dot" id="dot-3"></span><span class="progress-dot" id="dot-4"></span>
+      </div>
+
+      <div id="cap1" data-zone="caption" data-caption class="clip caption-block" data-start="0.18" data-duration="1.45" data-track-index="1" style="position:absolute;left:0;top:52px;width:770px;height:88px;">
+        <div id="cap1-inner" class="caption-line"><span class="word">Activa</span> <span class="word">el</span> <span class="word accent">modo</span> <span class="word accent">cine</span></div>
+      </div>
+      <div id="cap2" data-zone="caption" data-caption class="clip caption-block" data-start="1.75" data-duration="1.55" data-track-index="1" style="position:absolute;left:0;top:52px;width:770px;height:88px;">
+        <div id="cap2-inner" class="caption-line"><span class="word">Bloquea</span> <span class="word">la</span> <span class="word accent">cámara</span> <span class="word">ya</span></div>
+      </div>
+      <div id="cap3" data-zone="caption" data-caption class="clip caption-block" data-start="3.45" data-duration="2.2" data-track-index="1" style="position:absolute;left:0;top:52px;width:770px;height:88px;">
+        <div id="cap3-inner" class="caption-line"><span class="word">Revisa</span> <span class="word">el</span> <span class="word accent">horizonte</span> <span class="word">ahora</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var root = document.getElementById("root");
+    var tl = gsap.timeline({ paused: true });
+    var dur = parseFloat(root.getAttribute("data-duration") || "6");
+    var categoria = (document.documentElement.getAttribute("data-category") || "tips").toUpperCase();
+    var titulo = (document.documentElement.getAttribute("data-title") || "").trim();
+    var etiqueta = "PASO 01 · " + (titulo ? titulo.toUpperCase().slice(0, 24) : categoria);
+    document.getElementById("section-pill-text").textContent = etiqueta;
+
+    function setProgress(step) {
+      for (var i = 1; i <= 4; i += 1) {
+        var dot = document.getElementById("dot-" + i);
+        if (dot) dot.classList.toggle("active", i <= step);
+      }
+    }
+
+    function karaoke(group, start, end, accent, immediate, step) {
+      var bloque = typeof group === "string" ? document.querySelector(group) : group;
+      if (!bloque) return;
+      tl.call(function () { setProgress(step); }, null, start);
+      tl.set(bloque, { visibility: "visible" }, start);
+      tl.fromTo(bloque.querySelectorAll(".word"), { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.28, ease: "power4.out", stagger: 0.07, immediateRender: immediate }, start + 0.02);
+      tl.fromTo(accent, { scale: 1 }, { scale: 1.08, duration: 0.22, ease: "back.out(1.3)", yoyo: true, repeat: 1 }, start + 0.18);
+      tl.to(bloque, { opacity: 0, y: -8, duration: 0.14, ease: "power3.in" }, end - 0.14);
+      tl.set(bloque, { opacity: 1, y: 0, visibility: "hidden" }, end);
+    }
+
+    tl.fromTo("#section-pill", { y: -12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "back.out(1.4)" }, 0.05);
+    tl.fromTo(".progress-dot", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.22, stagger: 0.07, ease: "back.out(1.6)" }, 0.08);
+    tl.fromTo("#progress-bar", { scaleX: 0 }, { scaleX: 1, duration: Math.max(0.5, dur - 0.2), ease: "none" }, 0);
+    function vocalPunch(selector, t) {
+      tl.to(selector, { scale: 1.08, duration: 0.1, ease: "back.out(2.2)", transformOrigin: "50% 100%" }, t);
+      tl.to(selector, { scale: 1, duration: 0.18, ease: "power2.out" }, t + 0.1);
+    }
+    karaoke("#cap1", 0.18, 1.63, "#cap1 .word.accent", true, 1);
+    vocalPunch("#cap1 .word.accent", 0.42);
+    karaoke("#cap2", 1.75, 3.3, "#cap2 .word.accent", false, 2);
+    vocalPunch("#cap2 .word.accent", 1.98);
+    karaoke("#cap3", 3.45, Math.max(5.65, dur - 0.2), "#cap3 .word.accent", false, 4);
+    vocalPunch("#cap3 .word.accent", 3.72);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

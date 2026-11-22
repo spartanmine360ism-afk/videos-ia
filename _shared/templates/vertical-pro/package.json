@@ -1,0 +1,13 @@
+{
+  "name": "vertical-pro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.72 preview",
+    "check": "npx --yes hyperframes@0.9.72 check",
+    "render": "npx --yes hyperframes@0.9.72 render",
+    "publish": "npx --yes hyperframes@0.9.72 publish",
+    "portada": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/portada.ps1",
+    "audio": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/mezclar_audio.ps1 -Proyecto ."
+  }
+}

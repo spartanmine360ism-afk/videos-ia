@@ -1,0 +1,201 @@
+#root {
+  --style-accent: #00e5ff;
+  --style-accent-2: #f4fbff;
+  --style-ground: #0b111a;
+  --style-surface: #101a27;
+  --style-ink: #f4fbff;
+  --style-font: "Outfit", sans-serif;
+  --style-pattern: radial-gradient(circle at 50% 45%, rgba(0,229,255,.16), transparent 55%), repeating-linear-gradient(0deg, rgba(244,251,255,.035) 0 1px, transparent 1px 90px);
+}
+
+#root[data-style] {
+  --accent: var(--style-accent);
+  --accent-2: var(--style-accent-2);
+  --ground: var(--style-ground);
+  --surface: var(--style-surface);
+  --ink: var(--style-ink);
+  --font-display: var(--style-font);
+  background: var(--style-ground);
+}
+
+#root[data-style]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--style-pattern);
+}
+
+#root[data-style]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .5;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 4px);
+}
+
+#root[data-style] #bg-plate {
+  background: var(--style-pattern);
+}
+
+#root[data-style] #bg-veil {
+  background: rgba(6, 10, 16, .18);
+}
+
+#root[data-style] #hero-card,
+#root[data-style] #cta-card {
+  border-color: var(--style-accent);
+  background: linear-gradient(145deg, rgba(255,255,255,.08), rgba(0,0,0,.26)), var(--style-surface);
+  box-shadow: 0 28px 90px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+#root[data-style] .caption-block,
+#root[data-style] #section-pill,
+#root[data-style] #hero-kicker,
+#root[data-style] #cta-kicker {
+  font-family: var(--style-font);
+}
+
+#root[data-style] #hero-title,
+#root[data-style] #cta-question {
+  font-family: var(--style-font);
+}
+
+#root[data-style="1000350669"] {
+  --style-accent: #ff3b30;
+  --style-accent-2: #ffd166;
+  --style-ground: #101014;
+  --style-surface: #1d1a22;
+  --style-ink: #fffbe8;
+  --style-font: "Montserrat", sans-serif;
+  --style-pattern: radial-gradient(circle at 18% 22%, rgba(255,59,48,.35), transparent 38%), radial-gradient(circle at 82% 78%, rgba(255,209,102,.28), transparent 36%), repeating-linear-gradient(112deg, rgba(255,255,255,.05) 0 14px, transparent 14px 66px);
+}
+
+#root[data-style="1000350669"] #hero-card,
+#root[data-style="1000350669"] #cta-card {
+  border-radius: 8px;
+  border-width: 3px;
+}
+
+#root[data-style="1000350985"] {
+  --style-accent: #ffb03a;
+  --style-accent-2: #d8e8ff;
+  --style-ground: #14202b;
+  --style-surface: #1b2b39;
+  --style-ink: #f4f8ff;
+  --style-font: "Space Grotesk", sans-serif;
+  --style-pattern: linear-gradient(135deg, rgba(255,176,58,.2) 0 24%, transparent 24% 100%), linear-gradient(315deg, rgba(216,232,255,.14) 0 28%, transparent 28% 100%), repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 2px, transparent 2px 120px);
+}
+
+#root[data-style="1000350986"] {
+  --style-accent: #ff3b30;
+  --style-accent-2: #eef8ff;
+  --style-ground: #d9e8f2;
+  --style-surface: #8fa9bd;
+  --style-ink: #0b1924;
+  --style-font: "Montserrat", sans-serif;
+  --style-pattern: radial-gradient(circle at 50% 20%, rgba(255,255,255,.85), transparent 45%), repeating-linear-gradient(135deg, rgba(255,59,48,.22) 0 18px, transparent 18px 54px), linear-gradient(180deg, #d9e8f2, #7f9db2);
+}
+
+#root[data-style="1000350986"] #hero-card,
+#root[data-style="1000350986"] #cta-card {
+  border-radius: 10px;
+  background: rgba(10, 24, 36, .72);
+  color: #f4fbff;
+}
+
+#root[data-style="1000350987"] {
+  --style-accent: #64f4c8;
+  --style-accent-2: #d9fff2;
+  --style-ground: #050b0b;
+  --style-surface: #0a1717;
+  --style-ink: #e8fff9;
+  --style-font: "Space Grotesk", sans-serif;
+  --style-pattern: radial-gradient(circle at 50% 50%, rgba(100,244,200,.16) 0 2px, transparent 3px 100px), repeating-radial-gradient(circle at 50% 50%, rgba(100,244,200,.08) 0 1px, transparent 1px 92px), repeating-linear-gradient(0deg, rgba(100,244,200,.05) 0 1px, transparent 1px 46px);
+}
+
+#root[data-style="1000350987"] #hero-card,
+#root[data-style="1000350987"] #cta-card {
+  border-radius: 4px;
+  border-width: 3px;
+}
+
+#root[data-style="1000350988"] {
+  --style-accent: #d8792b;
+  --style-accent-2: #3b2a1b;
+  --style-ground: #efe3cc;
+  --style-surface: #f7efdf;
+  --style-ink: #2b1d12;
+  --style-font: "Outfit", sans-serif;
+  --style-pattern: repeating-linear-gradient(0deg, rgba(59,42,27,.08) 0 1px, transparent 1px 42px), repeating-linear-gradient(90deg, rgba(59,42,27,.07) 0 1px, transparent 1px 42px), radial-gradient(circle at 20% 80%, rgba(216,121,43,.18), transparent 42%);
+}
+
+#root[data-style="1000350988"] #hero-card,
+#root[data-style="1000350988"] #cta-card {
+  border-radius: 16px;
+  border-width: 2px;
+}
+
+#root[data-style="1000350997"] {
+  --style-accent: #ff6b4a;
+  --style-accent-2: #d7e6ff;
+  --style-ground: #16233a;
+  --style-surface: #1f3050;
+  --style-ink: #f4f7ff;
+  --style-font: "Space Grotesk", sans-serif;
+  --style-pattern: linear-gradient(90deg, rgba(255,107,74,.16) 0 12px, transparent 12px 100%), repeating-linear-gradient(0deg, rgba(215,230,255,.07) 0 1px, transparent 1px 72px), radial-gradient(circle at 82% 18%, rgba(255,107,74,.24), transparent 32%);
+}
+
+#root[data-style="1000350998"] {
+  --style-accent: #16d98a;
+  --style-accent-2: #eafff5;
+  --style-ground: #0e1f18;
+  --style-surface: #153228;
+  --style-ink: #effff8;
+  --style-font: "Outfit", sans-serif;
+  --style-pattern: radial-gradient(circle at 78% 22%, rgba(22,217,138,.24), transparent 34%), repeating-linear-gradient(90deg, rgba(234,255,245,.045) 0 1px, transparent 1px 80px), repeating-linear-gradient(0deg, rgba(234,255,245,.045) 0 1px, transparent 1px 80px);
+}
+
+#root[data-style="1000350998"] #hero-card,
+#root[data-style="1000350998"] #cta-card {
+  border-radius: 22px;
+}
+
+#root[data-style="1000350999"] {
+  --style-accent: #ffb36b;
+  --style-accent-2: #9bd9ff;
+  --style-ground: #141a2c;
+  --style-surface: #222c49;
+  --style-ink: #fff5e9;
+  --style-font: "Outfit", sans-serif;
+  --style-pattern: linear-gradient(180deg, rgba(155,217,255,.16) 0 30%, transparent 30% 100%), linear-gradient(180deg, transparent 0 52%, rgba(255,179,107,.14) 52% 78%, transparent 78%), radial-gradient(circle at 28% 40%, rgba(255,179,107,.2), transparent 34%);
+}
+
+#root[data-style="1000351002"] {
+  --style-accent: #ffd166;
+  --style-accent-2: #ff6b6b;
+  --style-ground: #151014;
+  --style-surface: #241a20;
+  --style-ink: #fff7ef;
+  --style-font: "Montserrat", sans-serif;
+  --style-pattern: linear-gradient(90deg, rgba(255,107,107,.14) 0 50%, rgba(255,209,102,.12) 50% 100%), linear-gradient(90deg, transparent 0 calc(50% - 2px), rgba(255,255,255,.18) calc(50% - 2px) 50%, transparent 50% 100%), repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 92px);
+}
+
+#root[data-style="1000351029"] {
+  --style-accent: #8ee6ff;
+  --style-accent-2: #d9f3ff;
+  --style-ground: #0a1420;
+  --style-surface: #13243a;
+  --style-ink: #f0fbff;
+  --style-font: "Space Grotesk", sans-serif;
+  --style-pattern: repeating-conic-gradient(from 0deg at 50% 48%, rgba(142,230,255,.16) 0 2deg, transparent 2deg 15deg), repeating-radial-gradient(circle at 50% 48%, rgba(142,230,255,.08) 0 1px, transparent 1px 120px), radial-gradient(circle at 50% 48%, rgba(142,230,255,.18), transparent 46%);
+}
+
+#root[data-style="1000351029"] #hero-card,
+#root[data-style="1000351029"] #cta-card {
+  border-width: 3px;
+  border-radius: 12px;
+}

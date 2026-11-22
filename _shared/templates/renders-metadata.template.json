@@ -1,0 +1,71 @@
+{
+  "video": "nombre-video_YYYY-MM-DD_HH-MM-SS.mp4",
+  "estilo_id": "1000350998",
+  "estilo": {
+    "id": "1000350998",
+    "referencia": "1000350998",
+    "nombre": "Tutorial paso a paso con interfaz",
+    "familia": "tutorial"
+  },
+  "duracion_maxima_s": 60.0,
+  "experimento_ab": {
+    "experimento": "gancho",
+    "gancho_a": "Error común: el detalle que casi nadie ve en este video",
+    "gancho_b": "Resultado directo: el truco que resuelve este video en segundos",
+    "asignacion": {
+      "youtube": "A",
+      "tiktok": "B"
+    }
+  },
+  "youtube": {
+    "title": "Gancho concreto del tema | Shorts",
+    "description": "Primera línea con el problema o la promesa del clip. Después el giro y el remate ligados al guion, con un beneficio claro.\nGuarda este tip y comenta qué harías tú.\n¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "pregunta_detonadora": "¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "hashtags": [
+      "Shorts",
+      "Drones",
+      "ConsejosDeVuelo",
+      "TENDENCIA",
+      "AuraDrones"
+    ],
+    "privacidad": "public"
+  },
+  "tiktok": {
+    "description": "Situación concreta del clip: algo que casi nadie espera.\nMuestra el problema, el consejo y el remate en tres frases cortas ligadas al guion.\nGuárdalo para tu próximo vuelo y comenta qué harías tú.\n¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "pregunta_detonadora": "¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "hashtags": [
+      "Drones",
+      "FPV",
+      "ConsejosDeVuelo",
+      "TomasVirales",
+      "NICHOEXACTO",
+      "AuraDrones"
+    ]
+  },
+  "instagram": {
+    "description": "Gancho específico del video en una línea.\n\n• Consejo accionable 1 del guion.\n• Consejo accionable 2 del guion.\n• Resultado o remate del clip.\n\nGuarda este reel y compártelo con tu crew antes de volar.\n¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "pregunta_detonadora": "¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "hashtags": [
+      "Drones",
+      "FPV",
+      "ConsejosDeVuelo",
+      "CineAereo",
+      "TomasVirales",
+      "ConfiguracionDrones",
+      "VueloSeguro",
+      "NICHOEXACTO",
+      "AuraDrones"
+    ]
+  },
+  "facebook": {
+    "description": "Habla como una persona de la comunidad: cuenta qué pasa en el clip y por qué importa, con el consejo y el remate del guion.\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.\n¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "pregunta_detonadora": "¿[PREGUNTA_DETONADORA_DEL_TEMA]?",
+    "hashtags": [
+      "Drones",
+      "FPV",
+      "ConsejosDeVuelo",
+      "NICHOEXACTO",
+      "AuraDrones"
+    ]
+  }
+}

@@ -1,0 +1,1635 @@
+{
+  "timezone": "America/Mexico_City",
+  "max_por_plataforma_por_dia": 3,
+  "tareas": [
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "metadata": {
+        "video": "tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+        "youtube": {
+          "title": "DJI Controller 3: no armes con AUX 1",
+          "description": "El DJI FPV Controller 3 trae cinco canales AUX, pero AUX 1 es el selector M/S/N de tres posiciones. En este Short mostramos cómo reservar AUX 1 para acro, horizonte y ángulo, mover el armado a AUX 4 o al botón C1 y revisar SBUS FAST en Betaflight y gafas antes de volar. Guarda el consejo para tu próxima configuración y suscríbete para más tips de FPV.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "FPV",
+            "Betaflight",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Si armas con AUX 1, perdiste un switch de tres posiciones.\nGuárdalo y comenta cómo tienes tus modos en el Controller 3.\nAUX 1 para acro, horizonte y ángulo; el armado va a AUX 4 o al C1 y revisa SBUS FAST.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "Betaflight",
+            "FPVFreestyle",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Tu mando RC3 esconde tres modos y un botón de armado.\n\n• AUX 1 es el selector M/S/N: úsalo para acro, horizonte y ángulo.\n• Mueve el armado a AUX 4 (Start/Stop) o AUX 5 (C1) y no quemes el selector.\n• Si no hay barras en Betaflight, revisa SBUS FAST también en las gafas.\n\nGuarda este reel y compártelo con tu crew antes de calibrar el dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Betaflight",
+            "DJI",
+            "ConfiguracionDrones",
+            "SeguridadAerea",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Llevamos el mando RC3 a Betaflight y salió un detalle que casi nadie usa: AUX 1 ya viene de tres posiciones, así que conviene dejarlo para los modos de vuelo y armar con otro botón. ¿Ustedes dónde ponen el armado y revisan SBUS FAST antes de despegar? Cuéntenlo y compartan este tip con quien está configurando su primer O4.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "Betaflight",
+            "SeguridadAerea",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "DJI Controller 3: no armes con AUX 1",
+        "description": "El DJI FPV Controller 3 trae cinco canales AUX, pero AUX 1 es el selector M/S/N de tres posiciones. En este Short mostramos cómo reservar AUX 1 para acro, horizonte y ángulo, mover el armado a AUX 4 o al botón C1 y revisar SBUS FAST en Betaflight y gafas antes de volar. Guarda el consejo para tu próxima configuración y suscríbete para más tips de FPV.",
+        "hashtags": [
+          "Drones",
+          "Shorts",
+          "FPV",
+          "Betaflight",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T15:00:00Z",
+      "scheduled_at_local": "2026-11-21T09:00:00-06:00",
+      "slot": "09:00",
+      "estado": "scheduled_native",
+      "tipo": "nativa",
+      "resultado": {
+        "plataforma": "youtube",
+        "id": "MZZHYEllz1Y",
+        "url": "https://www.youtube.com/watch?v=MZZHYEllz1Y",
+        "estado": "programado",
+        "scheduled_at": "2026-11-21T15:00:00Z",
+        "comentario_publicado": false
+      },
+      "id": "youtube-5f6989c25d",
+      "creado_en": "2026-11-21T02:54:02Z"
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "metadata": {
+        "video": "tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+        "youtube": {
+          "title": "DJI Controller 3: no armes con AUX 1",
+          "description": "El DJI FPV Controller 3 trae cinco canales AUX, pero AUX 1 es el selector M/S/N de tres posiciones. En este Short mostramos cómo reservar AUX 1 para acro, horizonte y ángulo, mover el armado a AUX 4 o al botón C1 y revisar SBUS FAST en Betaflight y gafas antes de volar. Guarda el consejo para tu próxima configuración y suscríbete para más tips de FPV.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "FPV",
+            "Betaflight",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Si armas con AUX 1, perdiste un switch de tres posiciones.\nGuárdalo y comenta cómo tienes tus modos en el Controller 3.\nAUX 1 para acro, horizonte y ángulo; el armado va a AUX 4 o al C1 y revisa SBUS FAST.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "Betaflight",
+            "FPVFreestyle",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Tu mando RC3 esconde tres modos y un botón de armado.\n\n• AUX 1 es el selector M/S/N: úsalo para acro, horizonte y ángulo.\n• Mueve el armado a AUX 4 (Start/Stop) o AUX 5 (C1) y no quemes el selector.\n• Si no hay barras en Betaflight, revisa SBUS FAST también en las gafas.\n\nGuarda este reel y compártelo con tu crew antes de calibrar el dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Betaflight",
+            "DJI",
+            "ConfiguracionDrones",
+            "SeguridadAerea",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Llevamos el mando RC3 a Betaflight y salió un detalle que casi nadie usa: AUX 1 ya viene de tres posiciones, así que conviene dejarlo para los modos de vuelo y armar con otro botón. ¿Ustedes dónde ponen el armado y revisan SBUS FAST antes de despegar? Cuéntenlo y compartan este tip con quien está configurando su primer O4.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "Betaflight",
+            "SeguridadAerea",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Si armas con AUX 1, perdiste un switch de tres posiciones.\nGuárdalo y comenta cómo tienes tus modos en el Controller 3.\nAUX 1 para acro, horizonte y ángulo; el armado va a AUX 4 o al C1 y revisa SBUS FAST.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "DroneTok",
+          "Betaflight",
+          "FPVFreestyle",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T14:30:00Z",
+      "scheduled_at_local": "2026-11-21T08:30:00-06:00",
+      "slot": "08:30",
+      "estado": "failed",
+      "tipo": "diferida",
+      "id": "tiktok-ca8ed28b3f",
+      "creado_en": "2026-11-21T02:54:02Z",
+      "error": "TikTok: timeout esperando http://localhost:8080/callback",
+      "ultimo_intento": "2026-11-21T18:13:34Z",
+      "intentos": 1
+    },
+    {
+      "plataforma": "instagram",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "metadata": {
+        "video": "tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+        "youtube": {
+          "title": "DJI Controller 3: no armes con AUX 1",
+          "description": "El DJI FPV Controller 3 trae cinco canales AUX, pero AUX 1 es el selector M/S/N de tres posiciones. En este Short mostramos cómo reservar AUX 1 para acro, horizonte y ángulo, mover el armado a AUX 4 o al botón C1 y revisar SBUS FAST en Betaflight y gafas antes de volar. Guarda el consejo para tu próxima configuración y suscríbete para más tips de FPV.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "FPV",
+            "Betaflight",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Si armas con AUX 1, perdiste un switch de tres posiciones.\nGuárdalo y comenta cómo tienes tus modos en el Controller 3.\nAUX 1 para acro, horizonte y ángulo; el armado va a AUX 4 o al C1 y revisa SBUS FAST.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "Betaflight",
+            "FPVFreestyle",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Tu mando RC3 esconde tres modos y un botón de armado.\n\n• AUX 1 es el selector M/S/N: úsalo para acro, horizonte y ángulo.\n• Mueve el armado a AUX 4 (Start/Stop) o AUX 5 (C1) y no quemes el selector.\n• Si no hay barras en Betaflight, revisa SBUS FAST también en las gafas.\n\nGuarda este reel y compártelo con tu crew antes de calibrar el dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Betaflight",
+            "DJI",
+            "ConfiguracionDrones",
+            "SeguridadAerea",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Llevamos el mando RC3 a Betaflight y salió un detalle que casi nadie usa: AUX 1 ya viene de tres posiciones, así que conviene dejarlo para los modos de vuelo y armar con otro botón. ¿Ustedes dónde ponen el armado y revisan SBUS FAST antes de despegar? Cuéntenlo y compartan este tip con quien está configurando su primer O4.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "Betaflight",
+            "SeguridadAerea",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Tu mando RC3 esconde tres modos y un botón de armado.\n\n• AUX 1 es el selector M/S/N: úsalo para acro, horizonte y ángulo.\n• Mueve el armado a AUX 4 (Start/Stop) o AUX 5 (C1) y no quemes el selector.\n• Si no hay barras en Betaflight, revisa SBUS FAST también en las gafas.\n\nGuarda este reel y compártelo con tu crew antes de calibrar el dron.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "DroneLife",
+          "DronePhotography",
+          "Betaflight",
+          "DJI",
+          "ConfiguracionDrones",
+          "SeguridadAerea",
+          "ConsejosDeVuelo",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T15:00:00Z",
+      "scheduled_at_local": "2026-11-21T09:00:00-06:00",
+      "slot": "09:00",
+      "estado": "failed",
+      "tipo": "diferida",
+      "requiere_credenciales": true,
+      "id": "instagram-7ed5f422e9",
+      "creado_en": "2026-11-21T02:54:02Z",
+      "error": "No existe el MP4 C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "ultimo_intento": "2026-11-21T23:48:33Z"
+    },
+    {
+      "plataforma": "facebook",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "metadata": {
+        "video": "tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+        "youtube": {
+          "title": "DJI Controller 3: no armes con AUX 1",
+          "description": "El DJI FPV Controller 3 trae cinco canales AUX, pero AUX 1 es el selector M/S/N de tres posiciones. En este Short mostramos cómo reservar AUX 1 para acro, horizonte y ángulo, mover el armado a AUX 4 o al botón C1 y revisar SBUS FAST en Betaflight y gafas antes de volar. Guarda el consejo para tu próxima configuración y suscríbete para más tips de FPV.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "FPV",
+            "Betaflight",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Si armas con AUX 1, perdiste un switch de tres posiciones.\nGuárdalo y comenta cómo tienes tus modos en el Controller 3.\nAUX 1 para acro, horizonte y ángulo; el armado va a AUX 4 o al C1 y revisa SBUS FAST.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "Betaflight",
+            "FPVFreestyle",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Tu mando RC3 esconde tres modos y un botón de armado.\n\n• AUX 1 es el selector M/S/N: úsalo para acro, horizonte y ángulo.\n• Mueve el armado a AUX 4 (Start/Stop) o AUX 5 (C1) y no quemes el selector.\n• Si no hay barras en Betaflight, revisa SBUS FAST también en las gafas.\n\nGuarda este reel y compártelo con tu crew antes de calibrar el dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Betaflight",
+            "DJI",
+            "ConfiguracionDrones",
+            "SeguridadAerea",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Llevamos el mando RC3 a Betaflight y salió un detalle que casi nadie usa: AUX 1 ya viene de tres posiciones, así que conviene dejarlo para los modos de vuelo y armar con otro botón. ¿Ustedes dónde ponen el armado y revisan SBUS FAST antes de despegar? Cuéntenlo y compartan este tip con quien está configurando su primer O4.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "Betaflight",
+            "SeguridadAerea",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Llevamos el mando RC3 a Betaflight y salió un detalle que casi nadie usa: AUX 1 ya viene de tres posiciones, así que conviene dejarlo para los modos de vuelo y armar con otro botón. ¿Ustedes dónde ponen el armado y revisan SBUS FAST antes de despegar? Cuéntenlo y compartan este tip con quien está configurando su primer O4.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "Betaflight",
+          "SeguridadAerea",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T14:30:00Z",
+      "scheduled_at_local": "2026-11-21T08:30:00-06:00",
+      "slot": "08:30",
+      "estado": "failed",
+      "tipo": "nativa_pendiente",
+      "requiere_credenciales": true,
+      "id": "facebook-19636134aa",
+      "creado_en": "2026-11-21T02:54:02Z",
+      "error": "No existe el MP4 C:\\Users\\aldo_\\Desktop\\videos-ia\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036\\renders\\tip-dji-fpv-controller-3-betaflight-config_20261120_203036_2026-11-20_20-47-19.mp4",
+      "ultimo_intento": "2026-11-21T23:48:33Z"
+    },
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "metadata": {
+        "video": "toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+        "youtube": {
+          "title": "Órbita baja y picado final: toma con dron",
+          "description": "Una toma cinematográfica con dron parece imposible hasta que se divide en tres decisiones: elegir el sujeto con el sol detrás, bloquear exposición y obturador a 180 grados a 60 cuadros, y recorrer una órbita baja sin corregir el horizonte. El remate llega al subir el morro y caer en picado sobre el mismo punto. Mantén la luz estable y repite la trayectoria desde el otro lado para comparar el resultado. Suscríbete para más planes de vuelo y comenta cuál ángulo te convence más.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Una órbita de 180 grados convierte un vuelo normal en un remate cinematográfico.\nGuarda este plan y comenta si el picado final o el ángulo contrario te gusta más.\nSujeto con contraluz, exposición bloqueada a 60 fps y giro lento sin tocar el horizonte.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "El remate no está en la suerte: está en repetir la misma trayectoria con la luz bajo control.\n\n• Contraluz: coloca el sol detrás del sujeto antes de mover el dron.\n• Exposición y obturador fijos a 180° / 60 fps para que el giro no parpadee.\n• Órbita baja, horizonte estable y subida de morro que termina en picado.\n\nGuarda este reel y compártelo con tu crew antes de ensayar tu próxima toma.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "ComposicionDron",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Desarmamos una de esas tomas que parecen imposibles: contraluz, exposición fija a 180 grados a 60 fps, una órbita baja y un picado final sobre el mismo punto. Lo difícil no es el movimiento, sino repetirlo igual cuando cambia la luz. ¿Ustedes prefieren el remate en picado o la versión desde el otro lado? Cuéntenlo y compartan este plan con quien está aprendiendo a filmar con dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "Órbita baja y picado final: toma con dron",
+        "description": "Una toma cinematográfica con dron parece imposible hasta que se divide en tres decisiones: elegir el sujeto con el sol detrás, bloquear exposición y obturador a 180 grados a 60 cuadros, y recorrer una órbita baja sin corregir el horizonte. El remate llega al subir el morro y caer en picado sobre el mismo punto. Mantén la luz estable y repite la trayectoria desde el otro lado para comparar el resultado. Suscríbete para más planes de vuelo y comenta cuál ángulo te convence más.",
+        "hashtags": [
+          "Drones",
+          "Shorts",
+          "DronCinematografico",
+          "TomaCinematografica",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T19:30:00Z",
+      "scheduled_at_local": "2026-11-21T13:30:00-06:00",
+      "slot": "13:30",
+      "estado": "scheduled_native",
+      "tipo": "nativa",
+      "resultado": {
+        "plataforma": "youtube",
+        "id": "m_QNcrqtYRY",
+        "url": "https://www.youtube.com/watch?v=m_QNcrqtYRY",
+        "estado": "programado",
+        "scheduled_at": "2026-11-21T19:30:00Z",
+        "comentario_publicado": false
+      },
+      "id": "youtube-b8786f22f0",
+      "creado_en": "2026-11-21T03:14:04Z"
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "metadata": {
+        "video": "toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+        "youtube": {
+          "title": "Órbita baja y picado final: toma con dron",
+          "description": "Una toma cinematográfica con dron parece imposible hasta que se divide en tres decisiones: elegir el sujeto con el sol detrás, bloquear exposición y obturador a 180 grados a 60 cuadros, y recorrer una órbita baja sin corregir el horizonte. El remate llega al subir el morro y caer en picado sobre el mismo punto. Mantén la luz estable y repite la trayectoria desde el otro lado para comparar el resultado. Suscríbete para más planes de vuelo y comenta cuál ángulo te convence más.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Una órbita de 180 grados convierte un vuelo normal en un remate cinematográfico.\nGuarda este plan y comenta si el picado final o el ángulo contrario te gusta más.\nSujeto con contraluz, exposición bloqueada a 60 fps y giro lento sin tocar el horizonte.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "El remate no está en la suerte: está en repetir la misma trayectoria con la luz bajo control.\n\n• Contraluz: coloca el sol detrás del sujeto antes de mover el dron.\n• Exposición y obturador fijos a 180° / 60 fps para que el giro no parpadee.\n• Órbita baja, horizonte estable y subida de morro que termina en picado.\n\nGuarda este reel y compártelo con tu crew antes de ensayar tu próxima toma.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "ComposicionDron",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Desarmamos una de esas tomas que parecen imposibles: contraluz, exposición fija a 180 grados a 60 fps, una órbita baja y un picado final sobre el mismo punto. Lo difícil no es el movimiento, sino repetirlo igual cuando cambia la luz. ¿Ustedes prefieren el remate en picado o la versión desde el otro lado? Cuéntenlo y compartan este plan con quien está aprendiendo a filmar con dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Una órbita de 180 grados convierte un vuelo normal en un remate cinematográfico.\nGuarda este plan y comenta si el picado final o el ángulo contrario te gusta más.\nSujeto con contraluz, exposición bloqueada a 60 fps y giro lento sin tocar el horizonte.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "DroneTok",
+          "DronCinematografico",
+          "TomaCinematografica",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T19:00:00Z",
+      "scheduled_at_local": "2026-11-21T13:00:00-06:00",
+      "slot": "13:00",
+      "estado": "failed",
+      "tipo": "diferida",
+      "id": "tiktok-8260727769",
+      "creado_en": "2026-11-21T03:14:04Z",
+      "error": "No existe el MP4 C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "ultimo_intento": "2026-11-21T18:58:33Z",
+      "intentos": 1
+    },
+    {
+      "plataforma": "instagram",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "metadata": {
+        "video": "toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+        "youtube": {
+          "title": "Órbita baja y picado final: toma con dron",
+          "description": "Una toma cinematográfica con dron parece imposible hasta que se divide en tres decisiones: elegir el sujeto con el sol detrás, bloquear exposición y obturador a 180 grados a 60 cuadros, y recorrer una órbita baja sin corregir el horizonte. El remate llega al subir el morro y caer en picado sobre el mismo punto. Mantén la luz estable y repite la trayectoria desde el otro lado para comparar el resultado. Suscríbete para más planes de vuelo y comenta cuál ángulo te convence más.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Una órbita de 180 grados convierte un vuelo normal en un remate cinematográfico.\nGuarda este plan y comenta si el picado final o el ángulo contrario te gusta más.\nSujeto con contraluz, exposición bloqueada a 60 fps y giro lento sin tocar el horizonte.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "El remate no está en la suerte: está en repetir la misma trayectoria con la luz bajo control.\n\n• Contraluz: coloca el sol detrás del sujeto antes de mover el dron.\n• Exposición y obturador fijos a 180° / 60 fps para que el giro no parpadee.\n• Órbita baja, horizonte estable y subida de morro que termina en picado.\n\nGuarda este reel y compártelo con tu crew antes de ensayar tu próxima toma.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "ComposicionDron",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Desarmamos una de esas tomas que parecen imposibles: contraluz, exposición fija a 180 grados a 60 fps, una órbita baja y un picado final sobre el mismo punto. Lo difícil no es el movimiento, sino repetirlo igual cuando cambia la luz. ¿Ustedes prefieren el remate en picado o la versión desde el otro lado? Cuéntenlo y compartan este plan con quien está aprendiendo a filmar con dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "El remate no está en la suerte: está en repetir la misma trayectoria con la luz bajo control.\n\n• Contraluz: coloca el sol detrás del sujeto antes de mover el dron.\n• Exposición y obturador fijos a 180° / 60 fps para que el giro no parpadee.\n• Órbita baja, horizonte estable y subida de morro que termina en picado.\n\nGuarda este reel y compártelo con tu crew antes de ensayar tu próxima toma.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "DroneLife",
+          "DronePhotography",
+          "CinematografiaAerea",
+          "TomaCinematografica",
+          "ComposicionDron",
+          "ConsejosDeVuelo",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T19:30:00Z",
+      "scheduled_at_local": "2026-11-21T13:30:00-06:00",
+      "slot": "13:30",
+      "estado": "failed",
+      "tipo": "diferida",
+      "requiere_credenciales": true,
+      "id": "instagram-a0a9a013fc",
+      "creado_en": "2026-11-21T03:14:04Z",
+      "error": "No existe el MP4 C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "ultimo_intento": "2026-11-21T23:48:33Z"
+    },
+    {
+      "plataforma": "facebook",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "metadata": {
+        "video": "toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+        "youtube": {
+          "title": "Órbita baja y picado final: toma con dron",
+          "description": "Una toma cinematográfica con dron parece imposible hasta que se divide en tres decisiones: elegir el sujeto con el sol detrás, bloquear exposición y obturador a 180 grados a 60 cuadros, y recorrer una órbita baja sin corregir el horizonte. El remate llega al subir el morro y caer en picado sobre el mismo punto. Mantén la luz estable y repite la trayectoria desde el otro lado para comparar el resultado. Suscríbete para más planes de vuelo y comenta cuál ángulo te convence más.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Una órbita de 180 grados convierte un vuelo normal en un remate cinematográfico.\nGuarda este plan y comenta si el picado final o el ángulo contrario te gusta más.\nSujeto con contraluz, exposición bloqueada a 60 fps y giro lento sin tocar el horizonte.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "DronCinematografico",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "El remate no está en la suerte: está en repetir la misma trayectoria con la luz bajo control.\n\n• Contraluz: coloca el sol detrás del sujeto antes de mover el dron.\n• Exposición y obturador fijos a 180° / 60 fps para que el giro no parpadee.\n• Órbita baja, horizonte estable y subida de morro que termina en picado.\n\nGuarda este reel y compártelo con tu crew antes de ensayar tu próxima toma.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "ComposicionDron",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Desarmamos una de esas tomas que parecen imposibles: contraluz, exposición fija a 180 grados a 60 fps, una órbita baja y un picado final sobre el mismo punto. Lo difícil no es el movimiento, sino repetirlo igual cuando cambia la luz. ¿Ustedes prefieren el remate en picado o la versión desde el otro lado? Cuéntenlo y compartan este plan con quien está aprendiendo a filmar con dron.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CinematografiaAerea",
+            "TomaCinematografica",
+            "AuraDrones"
+          ]
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Desarmamos una de esas tomas que parecen imposibles: contraluz, exposición fija a 180 grados a 60 fps, una órbita baja y un picado final sobre el mismo punto. Lo difícil no es el movimiento, sino repetirlo igual cuando cambia la luz. ¿Ustedes prefieren el remate en picado o la versión desde el otro lado? Cuéntenlo y compartan este plan con quien está aprendiendo a filmar con dron.",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "CinematografiaAerea",
+          "TomaCinematografica",
+          "AuraDrones"
+        ],
+        "privacidad": "public"
+      },
+      "scheduled_at": "2026-11-21T19:00:00Z",
+      "scheduled_at_local": "2026-11-21T13:00:00-06:00",
+      "slot": "13:00",
+      "estado": "failed",
+      "tipo": "nativa_pendiente",
+      "requiere_credenciales": true,
+      "id": "facebook-6924ebea97",
+      "creado_en": "2026-11-21T03:14:04Z",
+      "error": "No existe el MP4 C:\\Users\\aldo_\\Desktop\\videos-ia\\toma-corto-epico-cinematografico-con-dron-_20261120_205402\\renders\\toma-corto-epico-cinematografico-con-dron-_20261120_205402_2026-11-20_21-03-24.mp4",
+      "ultimo_intento": "2026-11-21T23:48:33Z"
+    },
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\listo-para-algo-mas-impresionante-que-ep1_20261121_122614\\renders\\listo-para-algo-mas-impresionante-que-ep1_20261121_122614_2026-11-21_12-57-08.mp4",
+      "metadata": {
+        "video": "listo-para-algo-mas-impresionante-que-ep1_20261121_122614_2026-11-21_12-26-14.mp4",
+        "formato": {
+          "resolucion": "1080x1920",
+          "fps": 30,
+          "duracion_s": 45.1,
+          "idioma": "es"
+        },
+        "paleta": {
+          "nombre": "Tips técnicos DJI / Configuración",
+          "clave": "tips",
+          "accent": "#00E5FF",
+          "accent_2": "#F4FBFF",
+          "ground": "#0B111A",
+          "surface": "#101A27",
+          "ink": "#F4FBFF",
+          "font_display": "Outfit"
+        },
+        "fuente": {
+          "plataforma": "DuckDuckGo · Reddit fpv",
+          "url": "https://www.reddit.com/r/fpv/comments/18s1t1q/uncrashed_fpv_sim_insim_settings_for_a_dji_avata/",
+          "titulo": "Uncrashed FPV Sim: In-Sim Settings for a DJI Avata - Reddit"
+        },
+        "serie": {
+          "serie_id": "listo-para-algo-mas-impresionante-que-",
+          "episodio": 1,
+          "total_episodios": 2,
+          "arco": "Del sim que se siente ajeno al ajuste calibrado y al reto visual siguiente.",
+          "adelanto": "Adelanto del EPISODIO 2/2: ¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Tu DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit que casi nadie \"ve.",
+          "gancho_b": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "cta": {
+          "pregunta": "¿Listo para algo más impresionante que las tomas orbitales?",
+          "hablada": "EPISODIO dos: guárdalo, comenta tu dron y ¿vamos por más?",
+          "bucle_invisible": "EPISODIO"
+        },
+        "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?",
+        "youtube": {
+          "title": "Uncrashed: 3 ajustes para Avata · Shorts",
+          "description": "Tu Avata no se siente igual en el sim hasta que calibras perfil, peso, giro y cámara. En este Short ves los tres ajustes de Uncrashed que explicaba un piloto en FPV y cómo comparar Opción A contra Opción B antes de tu próxima sesión. Guarda el tip y suscríbete para la segunda parte. ¿Listo para algo más impresionante que las tomas orbitales?",
+          "hashtags": [
+            "Shorts",
+            "DroneTips",
+            "FPVSim",
+            "DJIAvata",
+            "AuraDrones"
+          ],
+          "privacidad": "public",
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "tiktok": {
+          "description": "Tu DJI esconde esto: el sim se siente ajeno hasta que calibras peso y ángulo. Opción A copiar, Opción B ajustar. Guárdalo para tu próxima sesión. ¿Listo para algo más impresionante que las tomas orbitales?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "hashtags": [
+            "FPVSim",
+            "DroneTok",
+            "SimRacing",
+            "Avata",
+            "AuraDrones",
+            "ConfigDrones"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "instagram": {
+          "description": "Tres ajustes y el Avata deja de sentirse ajeno en el sim.\n\n• Perfil cinewhoop de 3 pulgadas: base cercana, no un racer.\n• Peso de 410 gramos: frena con inercia y sale suave.\n• Menos giro y más ángulo de cámara: el horizonte se asienta.\n\nGuarda este reel y compártelo con tu crew antes de comparar Opción A contra Opción B. ¿Listo para algo más impresionante que las tomas orbitales?",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "FPVSimulator",
+            "DJIAvata",
+            "ConfiguracionDrones",
+            "ConsejosDeVuelo",
+            "AuraDrones",
+            "SimRacing",
+            "DroneSetup"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "facebook": {
+          "description": "En FPV preguntaban cómo hacer que el sim se sintiera real con un Avata. La respuesta no fue copiar un preset de racer: fue calibrar perfil cinewhoop, peso de 410 gramos, menos giro y más ángulo de cámara. Compara Opción A contra Opción B en tu próxima sesión. ¿Listo para algo más impresionante que las tomas orbitales?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "FPVSim",
+            "DJIAvata",
+            "AuraDrones"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        }
+      },
+      "config": {
+        "title": "Uncrashed: 3 ajustes para Avata · Shorts",
+        "description": "Tu Avata no se siente igual en el sim hasta que calibras perfil, peso, giro y cámara. En este Short ves los tres ajustes de Uncrashed que explicaba un piloto en FPV y cómo comparar Opción A contra Opción B antes de tu próxima sesión. Guarda el tip y suscríbete para la segunda parte. ¿Listo para algo más impresionante que las tomas orbitales?\n¿Listo para algo más impresionante que las tomas orbitales?",
+        "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?",
+        "hashtags": [
+          "Shorts",
+          "ConsejosDeVuelo",
+          "FPVSim",
+          "DJIAvata",
+          "AuraDrones"
+        ],
+        "privacidad": "public",
+        "gancho_id": "A",
+        "gancho_variante": "El\" error de Tu DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit que casi nadie \"ve.",
+        "gancho_a": "El\" error de Tu DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit que casi nadie \"ve.",
+        "gancho_b": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": 1,
+        "total_episodios": "",
+        "adelanto": "Adelanto del EPISODIO 2/2: ¿Listo para algo más impresionante que las tomas orbitales?"
+      },
+      "scheduled_at": "2026-11-22T01:30:00Z",
+      "scheduled_at_local": "2026-11-21T19:30:00-06:00",
+      "slot": "19:30",
+      "estado": "published",
+      "tipo": "nativa",
+      "id": "youtube-3675993127",
+      "creado_en": "2026-11-21T23:57:09Z",
+      "promovida_en": "2026-11-22T00:03:12Z",
+      "upload_inicio": "2026-11-22T15:21:20Z",
+      "intentos": 2,
+      "ultimo_intento": "2026-11-22T01:59:09Z",
+      "publicado_en": "2026-11-22T15:21:29Z",
+      "resultado": {
+        "plataforma": "youtube",
+        "id": "L5pvZKS1VtE",
+        "url": "https://www.youtube.com/watch?v=L5pvZKS1VtE",
+        "estado": "publicado",
+        "scheduled_at": "",
+        "comentario_publicado": true,
+        "cover": ""
+      }
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\listo-para-algo-mas-impresionante-que-ep1_20261121_122614\\renders\\listo-para-algo-mas-impresionante-que-ep1_20261121_122614_2026-11-21_12-57-08.mp4",
+      "metadata": {
+        "video": "listo-para-algo-mas-impresionante-que-ep1_20261121_122614_2026-11-21_12-26-14.mp4",
+        "formato": {
+          "resolucion": "1080x1920",
+          "fps": 30,
+          "duracion_s": 45.1,
+          "idioma": "es"
+        },
+        "paleta": {
+          "nombre": "Tips técnicos DJI / Configuración",
+          "clave": "tips",
+          "accent": "#00E5FF",
+          "accent_2": "#F4FBFF",
+          "ground": "#0B111A",
+          "surface": "#101A27",
+          "ink": "#F4FBFF",
+          "font_display": "Outfit"
+        },
+        "fuente": {
+          "plataforma": "DuckDuckGo · Reddit fpv",
+          "url": "https://www.reddit.com/r/fpv/comments/18s1t1q/uncrashed_fpv_sim_insim_settings_for_a_dji_avata/",
+          "titulo": "Uncrashed FPV Sim: In-Sim Settings for a DJI Avata - Reddit"
+        },
+        "serie": {
+          "serie_id": "listo-para-algo-mas-impresionante-que-",
+          "episodio": 1,
+          "total_episodios": 2,
+          "arco": "Del sim que se siente ajeno al ajuste calibrado y al reto visual siguiente.",
+          "adelanto": "Adelanto del EPISODIO 2/2: ¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Tu DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit que casi nadie \"ve.",
+          "gancho_b": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "cta": {
+          "pregunta": "¿Listo para algo más impresionante que las tomas orbitales?",
+          "hablada": "EPISODIO dos: guárdalo, comenta tu dron y ¿vamos por más?",
+          "bucle_invisible": "EPISODIO"
+        },
+        "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?",
+        "youtube": {
+          "title": "Uncrashed: 3 ajustes para Avata · Shorts",
+          "description": "Tu Avata no se siente igual en el sim hasta que calibras perfil, peso, giro y cámara. En este Short ves los tres ajustes de Uncrashed que explicaba un piloto en FPV y cómo comparar Opción A contra Opción B antes de tu próxima sesión. Guarda el tip y suscríbete para la segunda parte. ¿Listo para algo más impresionante que las tomas orbitales?",
+          "hashtags": [
+            "Shorts",
+            "DroneTips",
+            "FPVSim",
+            "DJIAvata",
+            "AuraDrones"
+          ],
+          "privacidad": "public",
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "tiktok": {
+          "description": "Tu DJI esconde esto: el sim se siente ajeno hasta que calibras peso y ángulo. Opción A copiar, Opción B ajustar. Guárdalo para tu próxima sesión. ¿Listo para algo más impresionante que las tomas orbitales?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "hashtags": [
+            "FPVSim",
+            "DroneTok",
+            "SimRacing",
+            "Avata",
+            "AuraDrones",
+            "ConfigDrones"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "instagram": {
+          "description": "Tres ajustes y el Avata deja de sentirse ajeno en el sim.\n\n• Perfil cinewhoop de 3 pulgadas: base cercana, no un racer.\n• Peso de 410 gramos: frena con inercia y sale suave.\n• Menos giro y más ángulo de cámara: el horizonte se asienta.\n\nGuarda este reel y compártelo con tu crew antes de comparar Opción A contra Opción B. ¿Listo para algo más impresionante que las tomas orbitales?",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "FPVSimulator",
+            "DJIAvata",
+            "ConfiguracionDrones",
+            "ConsejosDeVuelo",
+            "AuraDrones",
+            "SimRacing",
+            "DroneSetup"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        },
+        "facebook": {
+          "description": "En FPV preguntaban cómo hacer que el sim se sintiera real con un Avata. La respuesta no fue copiar un preset de racer: fue calibrar perfil cinewhoop, peso de 410 gramos, menos giro y más ángulo de cámara. Compara Opción A contra Opción B en tu próxima sesión. ¿Listo para algo más impresionante que las tomas orbitales?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "FPVSim",
+            "DJIAvata",
+            "AuraDrones"
+          ],
+          "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?"
+        }
+      },
+      "config": {
+        "title": "",
+        "description": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.\nGuárdalo para consultarlo luego y comenta qué te pareció.\n¿Listo para algo más impresionante que las tomas orbitales?",
+        "pregunta_detonadora": "¿Listo para algo más impresionante que las tomas orbitales?",
+        "hashtags": [
+          "FPVSim",
+          "FPV",
+          "Avata",
+          "AuraDrones",
+          "ConsejosDeVuelo",
+          "CineAereo"
+        ],
+        "privacidad": "public",
+        "gancho_id": "B",
+        "gancho_variante": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.",
+        "gancho_a": "El\" error de Tu DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit que casi nadie \"ve.",
+        "gancho_b": "Tu\" DJI también esconde esto: Uncrashed FPV Sim: In-Sim Settings for a DJI Avata Reddit: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": 1,
+        "total_episodios": "",
+        "adelanto": "Adelanto del EPISODIO 2/2: ¿Listo para algo más impresionante que las tomas orbitales?"
+      },
+      "scheduled_at": "2026-11-22T01:53:00Z",
+      "scheduled_at_local": "2026-11-21T19:53:00-06:00",
+      "slot": "20:00",
+      "estado": "published",
+      "tipo": "diferida",
+      "id": "tiktok-e466f678ea",
+      "creado_en": "2026-11-21T23:57:09Z",
+      "scheduled_at_original": "2026-11-22T02:00:00Z",
+      "jitter_minutos": -7,
+      "jitter_aplicado": true,
+      "upload_inicio": "2026-11-22T01:58:13Z",
+      "publicado_en": "2026-11-22T01:58:22Z",
+      "resultado": {
+        "plataforma": "tiktok",
+        "id": "v_inbox_file~v2.7710808816845293589",
+        "url": "",
+        "estado": "subido_borrador_inbox"
+      }
+    },
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527\\renders\\mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527_2026-11-21_14-41-18.mp4",
+      "metadata": {
+        "video": "mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527_2026-11-21_14-41-18.mp4",
+        "cta": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+        "paleta": {
+          "nombre": "Tomas cinematográficas / Edición / Color",
+          "clave": "cine",
+          "accent": "#10B981",
+          "accent_2": "#FBBF24",
+          "ground": "#0F172A",
+          "surface": "#111C32",
+          "ink": "#ECFDF5",
+          "font_display": "Space Grotesk"
+        },
+        "serie": {
+          "serie_id": "mejores-configuraciones-fpv-para-el-dj",
+          "episodio": 2,
+          "total_episodios": 2,
+          "arco": "Miniserie mejores-configuraciones-fpv-para-el-dj: del problema a la decisión",
+          "adelanto": "Cierre de la miniserie: invita a elegir entre la Opción A y la Opción B."
+        },
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Esta toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso que casi nadie \"ve.",
+          "gancho_b": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "youtube": {
+          "title": "Cast AI: el error de la toma imposible | Shorts",
+          "description": "EPISODIO 2/2 de la miniserie: esta toma parece imposible y no necesitas otro dron. En este Short desglosamos el barrido rasante, el horizonte quieto y las tres decisiones que sostienen el plano: dibujar el final, corregir con toques cortos y subir los FPS en FPV antes de recortar. El remate repite el mismo plano desde el otro lado.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "CineAereo",
+            "CastAI",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "¿Otro dron? No: esta toma imposible nace de tres decisiones.\nBarrido rasante, horizonte quieto y giro al remate; luego repites el plano desde el otro lado.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "CastAI",
+            "TomaViral",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Esta toma parece imposible y cierra la miniserie EP2/2.\n\n• Dibuja el final: dónde empieza el barrido y dónde corta.\n• Corrige con toques cortos y guarda el giro al remate.\n• En FPV sube los FPS y recorta la edición a lo que importa.\n\nObserva el mismo plano desde el otro lado antes de decidir.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Cinematografia",
+            "CastAI",
+            "TomaViral",
+            "EdicionVideo",
+            "AuraDrones",
+            "MiniserieDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Hoy cerramos la miniserie con una toma que parece imposible sin cambiar de dron. La clave está en dibujar el final antes de despegar, mantener el horizonte quieto con correcciones cortas y repetir el barrido desde el otro lado para vender la ilusión. Después está la decisión divertida: ¿barrido limpio o giro al remate?\nEPISODIO dos: elige A o B y etiqueta a tu compañero.\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CineAereo",
+            "TomaViral",
+            "AuraDrones"
+          ]
+        },
+        "paleta_clave": "cine"
+      },
+      "config": {
+        "title": "Cast AI: el error de la toma imposible | Shorts",
+        "description": "EPISODIO 2/2 de la miniserie: esta toma parece imposible y no necesitas otro dron. En este Short desglosamos el barrido rasante, el horizonte quieto y las tres decisiones que sostienen el plano: dibujar el final, corregir con toques cortos y subir los FPS en FPV antes de recortar. El remate repite el mismo plano desde el otro lado.\nGuarda este tip y comenta qué modelo usas.\n¿EPISODIO dos: elige A o B y etiqueta a tu compañero?",
+        "pregunta_detonadora": "¿EPISODIO dos: elige A o B y etiqueta a tu compañero?",
+        "hashtags": [
+          "Shorts",
+          "CineAereo",
+          "CastAI",
+          "AuraDrones",
+          "FPV"
+        ],
+        "privacidad": "public",
+        "gancho_id": "A",
+        "gancho_variante": "El\" error de Esta toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso que casi nadie \"ve.",
+        "gancho_a": "El\" error de Esta toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso que casi nadie \"ve.",
+        "gancho_b": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": 2,
+        "total_episodios": "",
+        "adelanto": "Cierre de la miniserie: invita a elegir entre la Opción A y la Opción B."
+      },
+      "scheduled_at": "2026-11-22T15:00:00Z",
+      "scheduled_at_local": "2026-11-22T09:00:00-06:00",
+      "slot": "09:00",
+      "estado": "published",
+      "tipo": "nativa",
+      "id": "youtube-0371a2ea15",
+      "creado_en": "2026-11-21T23:57:09Z",
+      "promovida_en": "2026-11-22T00:03:12Z",
+      "upload_inicio": "2026-11-22T15:21:30Z",
+      "intentos": 2,
+      "ultimo_intento": "2026-11-22T14:56:44Z",
+      "publicado_en": "2026-11-22T15:21:45Z",
+      "resultado": {
+        "plataforma": "youtube",
+        "id": "WUEofh1gXdY",
+        "url": "https://www.youtube.com/watch?v=WUEofh1gXdY",
+        "estado": "publicado",
+        "scheduled_at": "",
+        "comentario_publicado": true,
+        "cover": "C:\\Users\\aldo_\\Desktop\\videos-ia\\mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527\\renders\\portada.jpg"
+      }
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527\\renders\\mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527_2026-11-21_14-41-18.mp4",
+      "metadata": {
+        "video": "mejores-configuraciones-fpv-para-el-dj-ep2_20261121_133527_2026-11-21_14-41-18.mp4",
+        "cta": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+        "paleta": {
+          "nombre": "Tomas cinematográficas / Edición / Color",
+          "clave": "cine",
+          "accent": "#10B981",
+          "accent_2": "#FBBF24",
+          "ground": "#0F172A",
+          "surface": "#111C32",
+          "ink": "#ECFDF5",
+          "font_display": "Space Grotesk"
+        },
+        "serie": {
+          "serie_id": "mejores-configuraciones-fpv-para-el-dj",
+          "episodio": 2,
+          "total_episodios": 2,
+          "arco": "Miniserie mejores-configuraciones-fpv-para-el-dj: del problema a la decisión",
+          "adelanto": "Cierre de la miniserie: invita a elegir entre la Opción A y la Opción B."
+        },
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Esta toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso que casi nadie \"ve.",
+          "gancho_b": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "youtube": {
+          "title": "Cast AI: el error de la toma imposible | Shorts",
+          "description": "EPISODIO 2/2 de la miniserie: esta toma parece imposible y no necesitas otro dron. En este Short desglosamos el barrido rasante, el horizonte quieto y las tres decisiones que sostienen el plano: dibujar el final, corregir con toques cortos y subir los FPS en FPV antes de recortar. El remate repite el mismo plano desde el otro lado.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "CineAereo",
+            "CastAI",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "¿Otro dron? No: esta toma imposible nace de tres decisiones.\nBarrido rasante, horizonte quieto y giro al remate; luego repites el plano desde el otro lado.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneTok",
+            "CastAI",
+            "TomaViral",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Esta toma parece imposible y cierra la miniserie EP2/2.\n\n• Dibuja el final: dónde empieza el barrido y dónde corta.\n• Corrige con toques cortos y guarda el giro al remate.\n• En FPV sube los FPS y recorta la edición a lo que importa.\n\nObserva el mismo plano desde el otro lado antes de decidir.\nEPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DroneLife",
+            "DronePhotography",
+            "Cinematografia",
+            "CastAI",
+            "TomaViral",
+            "EdicionVideo",
+            "AuraDrones",
+            "MiniserieDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Hoy cerramos la miniserie con una toma que parece imposible sin cambiar de dron. La clave está en dibujar el final antes de despegar, mantener el horizonte quieto con correcciones cortas y repetir el barrido desde el otro lado para vender la ilusión. Después está la decisión divertida: ¿barrido limpio o giro al remate?\nEPISODIO dos: elige A o B y etiqueta a tu compañero.\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "EPISODIO dos: elige A o B y etiqueta a tu compañero.",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "CineAereo",
+            "TomaViral",
+            "AuraDrones"
+          ]
+        },
+        "paleta_clave": "cine"
+      },
+      "config": {
+        "title": "",
+        "description": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.\nBarrido rasante, horizonte quieto y giro al remate; luego repites el plano desde el otro lado.\nGuárdalo para consultarlo luego y comenta qué te pareció.\n¿EPISODIO dos: elige A o B y etiqueta a tu compañero?",
+        "pregunta_detonadora": "¿EPISODIO dos: elige A o B y etiqueta a tu compañero?",
+        "hashtags": [
+          "FPV",
+          "CastAI",
+          "TomaViral",
+          "AuraDrones",
+          "ConsejosDeVuelo",
+          "CineAereo"
+        ],
+        "privacidad": "public",
+        "gancho_id": "B",
+        "gancho_variante": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.",
+        "gancho_a": "El\" error de Esta toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso que casi nadie \"ve.",
+        "gancho_b": "Esta\" toma parece imposible: Cast AI | Método viral: Drone IA… Te enseño el paso a paso: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": 2,
+        "total_episodios": "",
+        "adelanto": "Cierre de la miniserie: invita a elegir entre la Opción A y la Opción B."
+      },
+      "scheduled_at": "2026-11-22T14:29:00Z",
+      "scheduled_at_local": "2026-11-22T08:29:00-06:00",
+      "slot": "08:30",
+      "estado": "published",
+      "tipo": "diferida",
+      "id": "tiktok-2577b1069e",
+      "creado_en": "2026-11-21T23:57:09Z",
+      "scheduled_at_original": "2026-11-22T14:30:00Z",
+      "jitter_minutos": -1,
+      "jitter_aplicado": true,
+      "upload_inicio": "2026-11-22T14:25:00Z",
+      "publicado_en": "2026-11-22T14:25:09Z",
+      "resultado": {
+        "plataforma": "tiktok",
+        "id": "v_inbox_file~v2.7711001464537106484",
+        "url": "",
+        "estado": "subido_borrador_inbox"
+      }
+    },
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051\\renders\\dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051_2026-11-21_16-10-25.mp4",
+      "metadata": {
+        "video": "dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051_2026-11-21_16-10-25.mp4",
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El error de Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo que casi nadie ve.",
+          "gancho_b": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "serie": {
+          "id": "dji-mini-3-modo-fpv-configuracion-y-vu",
+          "episodio": 1,
+          "total": 3,
+          "adelanto": "Adelanto del EPISODIO 2/3: Filmmaker | Editor | Director Audiovisual | ¿Querés lograr"
+        },
+        "youtube": {
+          "title": "Modo FPV en DJI Mini 3 | EP 1/3 Shorts",
+          "description": "Episodio 1/3: activa el modo FPV en tu DJI Mini 3 con tres ajustes clave. Verás dónde elegir Modo de control FPV, cómo bajar la sensibilidad de sticks entre 10% y 15% y por qué probar el freno de emergencia en espacio abierto antes de subir altura. Un tip práctico para volar más suave y con control.\n¿Qué modelo de dron usas tú para practicar FPV?",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DJIMini3",
+            "FPV",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Tu Mini 3 tiene modo FPV y casi nadie lo ajusta bien.\nActiva FPV, baja sticks 10-15% y prueba freno de emergencia en abierto.\nGuárdalo antes de volar.\n¿Qué modelo de dron usas tú para practicar FPV?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DJIMini3",
+            "DroneTok",
+            "FYP",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "EPISODIO 1/3: Modo FPV en DJI Mini 3\n\n• Activa Control > Modo de control > FPV para una respuesta más directa.\n• Baja la sensibilidad de sticks 10-15% para evitar giros bruscos.\n• Activa el freno de emergencia y prueba en espacio abierto.\n\nGuarda este reel antes de tu próximo vuelo.\n¿Qué modelo de dron usas tú para practicar FPV?",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "DJIMini3",
+            "FPV",
+            "DroneTips",
+            "DroneLife",
+            "AjustesDJI",
+            "VuelosSeguros",
+            "Pilotaje",
+            "DronePhotography",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Arrancamos la miniserie del DJI Mini 3 en modo FPV con un ajuste que cambia la sensación de vuelo: activar FPV, suavizar sticks y probar el freno de emergencia en un lugar abierto. Si vuelas Mini 3, este checklist te puede ahorrar un susto.\n¿Qué modelo de dron usas tú para practicar FPV?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "DJIMini3",
+            "FPV",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "paleta": {
+          "nombre": "Tips técnicos DJI / Configuración",
+          "clave": "tips",
+          "accent": "#00E5FF",
+          "accent_2": "#F4FBFF",
+          "ground": "#0B111A",
+          "surface": "#101A27",
+          "ink": "#F4FBFF",
+          "font_display": "Outfit"
+        },
+        "paleta_clave": "tips"
+      },
+      "config": {
+        "title": "Modo FPV en DJI Mini 3 | EP 1/3 Shorts",
+        "description": "Episodio 1/3: activa el modo FPV en tu DJI Mini 3 con tres ajustes clave. Verás dónde elegir Modo de control FPV, cómo bajar la sensibilidad de sticks entre 10% y 15% y por qué probar el freno de emergencia en espacio abierto antes de subir altura. Un tip práctico para volar más suave y con control.\n¿Qué modelo de dron usas tú para practicar FPV?",
+        "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+        "hashtags": [
+          "Drones",
+          "Shorts",
+          "DJIMini3",
+          "FPV",
+          "AuraDrones"
+        ],
+        "privacidad": "public",
+        "gancho_id": "A",
+        "gancho_variante": "El error de Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo que casi nadie ve.",
+        "gancho_a": "El error de Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo que casi nadie ve.",
+        "gancho_b": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.",
+        "serie_id": "dji-mini-3-modo-fpv-configuracion-y-vu",
+        "episodio": 1,
+        "total_episodios": 3,
+        "adelanto": "Adelanto del EPISODIO 2/3: Filmmaker | Editor | Director Audiovisual | ¿Querés lograr"
+      },
+      "scheduled_at": "2026-11-22T19:30:00Z",
+      "scheduled_at_local": "2026-11-22T13:30:00-06:00",
+      "slot": "13:30",
+      "estado": "pending",
+      "tipo": "nativa",
+      "id": "youtube-ab7c92b04c",
+      "creado_en": "2026-11-21T23:57:11Z",
+      "promovida_en": "2026-11-22T00:03:12Z"
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051\\renders\\dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051_2026-11-21_16-10-25.mp4",
+      "metadata": {
+        "video": "dji-mini-3-modo-fpv-configuracion-y-vu-ep1_20261121_145051_2026-11-21_16-10-25.mp4",
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El error de Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo que casi nadie ve.",
+          "gancho_b": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "serie": {
+          "id": "dji-mini-3-modo-fpv-configuracion-y-vu",
+          "episodio": 1,
+          "total": 3,
+          "adelanto": "Adelanto del EPISODIO 2/3: Filmmaker | Editor | Director Audiovisual | ¿Querés lograr"
+        },
+        "youtube": {
+          "title": "Modo FPV en DJI Mini 3 | EP 1/3 Shorts",
+          "description": "Episodio 1/3: activa el modo FPV en tu DJI Mini 3 con tres ajustes clave. Verás dónde elegir Modo de control FPV, cómo bajar la sensibilidad de sticks entre 10% y 15% y por qué probar el freno de emergencia en espacio abierto antes de subir altura. Un tip práctico para volar más suave y con control.\n¿Qué modelo de dron usas tú para practicar FPV?",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "Shorts",
+            "DJIMini3",
+            "FPV",
+            "AuraDrones"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "Tu Mini 3 tiene modo FPV y casi nadie lo ajusta bien.\nActiva FPV, baja sticks 10-15% y prueba freno de emergencia en abierto.\nGuárdalo antes de volar.\n¿Qué modelo de dron usas tú para practicar FPV?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "FPV",
+            "DJIMini3",
+            "DroneTok",
+            "FYP",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "EPISODIO 1/3: Modo FPV en DJI Mini 3\n\n• Activa Control > Modo de control > FPV para una respuesta más directa.\n• Baja la sensibilidad de sticks 10-15% para evitar giros bruscos.\n• Activa el freno de emergencia y prueba en espacio abierto.\n\nGuarda este reel antes de tu próximo vuelo.\n¿Qué modelo de dron usas tú para practicar FPV?",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "DJIMini3",
+            "FPV",
+            "DroneTips",
+            "DroneLife",
+            "AjustesDJI",
+            "VuelosSeguros",
+            "Pilotaje",
+            "DronePhotography",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Arrancamos la miniserie del DJI Mini 3 en modo FPV con un ajuste que cambia la sensación de vuelo: activar FPV, suavizar sticks y probar el freno de emergencia en un lugar abierto. Si vuelas Mini 3, este checklist te puede ahorrar un susto.\n¿Qué modelo de dron usas tú para practicar FPV?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+          "hashtags": [
+            "Drones",
+            "DJIMini3",
+            "FPV",
+            "ConsejosDeVuelo",
+            "AuraDrones"
+          ]
+        },
+        "paleta": {
+          "nombre": "Tips técnicos DJI / Configuración",
+          "clave": "tips",
+          "accent": "#00E5FF",
+          "accent_2": "#F4FBFF",
+          "ground": "#0B111A",
+          "surface": "#101A27",
+          "ink": "#F4FBFF",
+          "font_display": "Outfit"
+        },
+        "paleta_clave": "tips"
+      },
+      "config": {
+        "title": "",
+        "description": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.\nActiva FPV, baja sticks 10-15% y prueba freno de emergencia en abierto.\nGuárdalo antes de volar.\n¿Qué modelo de dron usas tú para practicar FPV?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+        "pregunta_detonadora": "¿Qué modelo de dron usas tú para practicar FPV?",
+        "hashtags": [
+          "Drones",
+          "FPV",
+          "DJIMini3",
+          "DroneTok",
+          "FYP",
+          "AuraDrones"
+        ],
+        "privacidad": "public",
+        "gancho_id": "B",
+        "gancho_variante": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.",
+        "gancho_a": "El error de Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo que casi nadie ve.",
+        "gancho_b": "Tu DJI también esconde esto: Dji Mini 3 Modo FPV: Configuración y Vuelo: resultado directo en 15 segundos.",
+        "serie_id": "dji-mini-3-modo-fpv-configuracion-y-vu",
+        "episodio": 1,
+        "total_episodios": 3,
+        "adelanto": "Adelanto del EPISODIO 2/3: Filmmaker | Editor | Director Audiovisual | ¿Querés lograr"
+      },
+      "scheduled_at": "2026-11-22T19:08:00Z",
+      "scheduled_at_local": "2026-11-22T13:08:00-06:00",
+      "slot": "13:00",
+      "estado": "pending",
+      "tipo": "diferida",
+      "id": "tiktok-d254c244ee",
+      "creado_en": "2026-11-21T23:57:11Z",
+      "scheduled_at_original": "2026-11-22T19:00:00Z",
+      "jitter_minutos": 8,
+      "jitter_aplicado": true
+    },
+    {
+      "plataforma": "youtube",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tech-kinay-visual-storyteller-son-estos-lo_20261121_132216\\renders\\tech-kinay-visual-storyteller-son-estos-lo_20261121_132216_2026-11-21_14-26-54.mp4",
+      "metadata": {
+        "video": "tech-kinay-visual-storyteller-son-estos-lo_20261121_132216_2026-11-21_14-26-54.mp4",
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Esto está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores que casi nadie \"ve.",
+          "gancho_b": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "youtube": {
+          "title": "Kinay Visual Storyteller: ¿mejores? Shorts",
+          "description": "Kinay Visual Storyteller aparece como tendencia en Reels. Sin datos cerrados, conviene revisar formato vertical, pregunta en el título, promesa de estilo y quién edita después. Comparamos dos caminos y damos un veredicto para creadores.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "Shorts",
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "¿Te tienta Kinay Visual Storyteller?\nNo hay datos cerrados: mira el formato, la promesa y quién edita después.\nMi veredicto: úsalo para explorar.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa",
+            "CreadoresDeContenido",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Kinay Visual Storyteller está en tendencia. Antes de cambiar, mira esto:\n\n• Formato vertical y una pregunta clara en el título.\n• La promesa de estilo no basta sin control del guion.\n• Prueba una pieza real antes de mudar tu flujo.\n\nVeredicto: úsalo para explorar, no para decidir por ti.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nGuárdalo para revisarlo luego y compártelo con quien le sirva.\n\nGuarda este reel y compártelo con alguien que cree contenido o vuele drones.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa",
+            "CreadoresDeContenido",
+            "HerramientasIA",
+            "NovedadesTech",
+            "ProductividadCreativa",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Hoy vimos por qué Kinay Visual Storyteller está dando de qué hablar: formato vertical, pregunta en el título y una promesa de estilo. La recomendación es probar una pieza real antes de mover todo tu flujo. ¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "AuraDrones"
+          ]
+        },
+        "paleta": {
+          "nombre": "Novedades Tech / Gadgets / Comparativas",
+          "clave": "tech",
+          "accent": "#8B5CF6",
+          "accent_2": "#EC4899",
+          "ground": "#090D16",
+          "surface": "#12142A",
+          "ink": "#F5F3FF",
+          "font_display": "Outfit"
+        },
+        "paleta_clave": "tech"
+      },
+      "config": {
+        "title": "Kinay Visual Storyteller: ¿mejores? Shorts",
+        "description": "Kinay Visual Storyteller aparece como tendencia en Reels. Sin datos cerrados, conviene revisar formato vertical, pregunta en el título, promesa de estilo y quién edita después. Comparamos dos caminos y damos un veredicto para creadores.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+        "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+        "hashtags": [
+          "Shorts",
+          "TendenciasTech",
+          "IAParaCreadores",
+          "VisualStoryteller",
+          "Comparativa"
+        ],
+        "privacidad": "public",
+        "gancho_id": "A",
+        "gancho_variante": "El\" error de Esto está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores que casi nadie \"ve.",
+        "gancho_a": "El\" error de Esto está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores que casi nadie \"ve.",
+        "gancho_b": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": "",
+        "total_episodios": "",
+        "adelanto": ""
+      },
+      "scheduled_at": "2026-11-23T01:30:00Z",
+      "scheduled_at_local": "2026-11-22T19:30:00-06:00",
+      "slot": "19:30",
+      "estado": "pending",
+      "tipo": "nativa",
+      "id": "youtube-4b767da992",
+      "creado_en": "2026-11-21T23:58:54Z",
+      "promovida_en": "2026-11-22T00:03:12Z"
+    },
+    {
+      "plataforma": "tiktok",
+      "video": "C:\\Users\\aldo_\\Desktop\\videos-ia\\tech-kinay-visual-storyteller-son-estos-lo_20261121_132216\\renders\\tech-kinay-visual-storyteller-son-estos-lo_20261121_132216_2026-11-21_14-26-54.mp4",
+      "metadata": {
+        "video": "tech-kinay-visual-storyteller-son-estos-lo_20261121_132216_2026-11-21_14-26-54.mp4",
+        "experimento_ab": {
+          "experimento": "gancho",
+          "gancho_a": "El\" error de Esto está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores que casi nadie \"ve.",
+          "gancho_b": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.",
+          "asignacion": {
+            "youtube": "A",
+            "tiktok": "B"
+          }
+        },
+        "youtube": {
+          "title": "Kinay Visual Storyteller: ¿mejores? Shorts",
+          "description": "Kinay Visual Storyteller aparece como tendencia en Reels. Sin datos cerrados, conviene revisar formato vertical, pregunta en el título, promesa de estilo y quién edita después. Comparamos dos caminos y damos un veredicto para creadores.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "Shorts",
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa"
+          ],
+          "privacidad": "public"
+        },
+        "tiktok": {
+          "description": "¿Te tienta Kinay Visual Storyteller?\nNo hay datos cerrados: mira el formato, la promesa y quién edita después.\nMi veredicto: úsalo para explorar.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nGuárdalo para consultarlo luego y comenta qué te pareció.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa",
+            "CreadoresDeContenido",
+            "AuraDrones"
+          ]
+        },
+        "instagram": {
+          "description": "Kinay Visual Storyteller está en tendencia. Antes de cambiar, mira esto:\n\n• Formato vertical y una pregunta clara en el título.\n• La promesa de estilo no basta sin control del guion.\n• Prueba una pieza real antes de mudar tu flujo.\n\nVeredicto: úsalo para explorar, no para decidir por ti.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nGuárdalo para revisarlo luego y compártelo con quien le sirva.\n\nGuarda este reel y compártelo con alguien que cree contenido o vuele drones.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "Comparativa",
+            "CreadoresDeContenido",
+            "HerramientasIA",
+            "NovedadesTech",
+            "ProductividadCreativa",
+            "AuraDrones"
+          ]
+        },
+        "facebook": {
+          "description": "Hoy vimos por qué Kinay Visual Storyteller está dando de qué hablar: formato vertical, pregunta en el título y una promesa de estilo. La recomendación es probar una pieza real antes de mover todo tu flujo. ¿Probarías Kinay en una pieza real antes de soltar tu editor?\n\nCuéntame en los comentarios qué opinas o compártelo con alguien a quien le sirva.",
+          "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+          "hashtags": [
+            "TendenciasTech",
+            "IAParaCreadores",
+            "VisualStoryteller",
+            "AuraDrones"
+          ]
+        },
+        "paleta": {
+          "nombre": "Novedades Tech / Gadgets / Comparativas",
+          "clave": "tech",
+          "accent": "#8B5CF6",
+          "accent_2": "#EC4899",
+          "ground": "#090D16",
+          "surface": "#12142A",
+          "ink": "#F5F3FF",
+          "font_display": "Outfit"
+        },
+        "paleta_clave": "tech"
+      },
+      "config": {
+        "title": "",
+        "description": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.\nNo hay datos cerrados: mira el formato, la promesa y quién edita después.\nMi veredicto: úsalo para explorar.\nGuárdalo para consultarlo luego y comenta qué te pareció.\n¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+        "pregunta_detonadora": "¿Probarías Kinay en una pieza real antes de soltar tu editor?",
+        "hashtags": [
+          "TendenciasTech",
+          "IAParaCreadores",
+          "Comparativa",
+          "CreadoresDeContenido",
+          "AuraDrones",
+          "FPV"
+        ],
+        "privacidad": "public",
+        "gancho_id": "B",
+        "gancho_variante": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.",
+        "gancho_a": "El\" error de Esto está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores que casi nadie \"ve.",
+        "gancho_b": "Esto\" está marcando tendencia: Kinay | Visual Storyteller | ¿Son estos los mejores: resultado directo en 15 \"segundos.",
+        "serie_id": "",
+        "episodio": "",
+        "total_episodios": "",
+        "adelanto": ""
+      },
+      "scheduled_at": "2026-11-22T02:06:00Z",
+      "scheduled_at_local": "2026-11-21T20:06:00-06:00",
+      "slot": "20:00",
+      "estado": "published",
+      "tipo": "diferida",
+      "id": "tiktok-50252ca421",
+      "creado_en": "2026-11-21T23:58:54Z",
+      "scheduled_at_original": "2026-11-22T02:00:00Z",
+      "jitter_minutos": 6,
+      "jitter_aplicado": true,
+      "upload_inicio": "2026-11-22T02:02:00Z",
+      "publicado_en": "2026-11-22T02:02:07Z",
+      "resultado": {
+        "plataforma": "tiktok",
+        "id": "v_inbox_file~v2.7710810143407163412",
+        "url": "",
+        "estado": "subido_borrador_inbox"
+      }
+    }
+  ]
+}
