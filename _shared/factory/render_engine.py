@@ -37,6 +37,7 @@ ARCHIVOS_CLAVE = [
     "assets/styles/estilos.css",
     "assets/fonts/fonts.css",
     "assets/scripts/three.module.js",
+    "assets/scripts/three.core.js",
     "assets/scripts/d3.min.js",
     "assets/scripts/flubber.min.js",
     "assets/audio/voz.mp3",
