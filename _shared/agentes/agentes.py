@@ -29,6 +29,14 @@ except Exception:
     estilos_video = None
 
 try:
+    from .herramientas_externas import resumen as herramientas_externas
+except ImportError:
+    try:
+        from herramientas_externas import resumen as herramientas_externas
+    except ImportError:
+        herramientas_externas = None
+
+try:
     import metadata_viral
 except Exception:
     metadata_viral = None
@@ -65,6 +73,15 @@ def _reglas(contexto: Contexto) -> dict[str, Any]:
         return {}
     try:
         return estilos_video.reglas_referencia(contexto.estilo)
+    except Exception:
+        return {}
+
+
+def _herramientas() -> dict[str, Any]:
+    if herramientas_externas is None:
+        return {}
+    try:
+        return herramientas_externas()
     except Exception:
         return {}
 
@@ -178,6 +195,7 @@ class AgenteCreativo(Agente):
                 "concepto": f"Mostrar {_titulo(contexto)} como un proceso visible, no como una explicación abstracta.",
                 "giro": "Un cambio pequeño al final demuestra por qué el orden importa.",
                 "identidad": "Directo, auténtico, sin clichés de plantilla ni prompts genéricos.",
+                "recetas_disponibles": list((_herramientas().get("recetas") or {}).keys()),
             },
         )
 
@@ -202,6 +220,7 @@ class AgenteInspectorReferencias(Agente):
                 "audio": reglas.get("audio", "voz limpia, música baja y SFX en cortes"),
                 "luz": reglas.get("luz", "contraste alto y una fuente dominante"),
                 "movimiento": reglas.get("movimiento", "cámara viva con recortes cortos"),
+                "contrato_de_escena": "Cada fotograma es una función pura de t; voz y tiempos reales mandan sobre la imagen.",
             },
             avisos,
         )
@@ -319,6 +338,8 @@ class AgenteDisenador(Agente):
                 "tipografia": {"titulo_px": 76, "subtitulo_px": 44, "cuerpo_px": 34, "line_height": 1.16},
                 "contraste": "Texto claro sobre superficie oscura o texto oscuro sobre superficie clara según estilo",
                 "reglas": ["Una idea por bloque", "Máximo dos líneas por subtítulo", "Sin sombras que imiten texto duplicado"],
+                "sistemas_disponibles": [lib["nombre"] for lib in (_herramientas().get("bibliotecas") or []) if lib.get("disponible")],
+                "diagramas": "Usar D3 + Flubber para HUD y morphing; el texto nunca baja de y=1320.",
                 "sin_solapes": True,
             },
         )
@@ -360,6 +381,8 @@ class AgenteCartoon(Agente):
                 "ruta": str(destino),
                 "personajes": ["protagonista vectorial simple"],
                 "escenas": ["plano abierto", "detalle de gesto", "cierre con variación de color"],
+                "herramientas": [lib["nombre"] for lib in (_herramientas().get("bibliotecas") or []) if lib.get("disponible")],
+                "tecnica": "SVG con tinta que hierve, partes separadas, squash y settle; modelo 3D con Three.js solo si no existe en la biblioteca local.",
             },
         )
 
@@ -383,7 +406,21 @@ class AgenteInspectorCartoon(Agente):
                 problemas.append("SVG inválido")
             if "<text" in contenido:
                 problemas.append("SVG contiene texto rasterizable; usar texto HTML separado")
-        return resultado(self.id, self.nombre, {"aplicable": True, "problemas": problemas, "consistente": not problemas}, problemas)
+        return resultado(
+            self.id,
+            self.nombre,
+            {
+                "aplicable": True,
+                "problemas": problemas,
+                "consistente": not problemas,
+                "checks": [
+                    "Tinta con tres variantes de boil intercambiadas cada dos fotogramas",
+                    "Cuerpo, ojos, boca y extremidades como grupos separados",
+                    "Sin Math.random, sin reloj y sin estado entre fotogramas",
+                ],
+            },
+            problemas,
+        )
 
 
 class AgenteQATecnico(Agente):
@@ -435,6 +472,8 @@ class AgenteSupervisorVisual(Agente):
                         "Zona inferior y>1320 libre",
                         "Cambio de plano cada 0.6-1.5 s",
                         "Contraste suficiente en las cuatro esquinas",
+                        "Cada fotograma es función pura de t, sin aleatoriedad ni estado previo",
+                        "Sin CDN, sin fetch remoto y sin servicios de pago durante el render",
                     ],
                 },
             )

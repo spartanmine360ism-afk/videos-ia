@@ -129,8 +129,9 @@ def _copiar_salida(proyecto: Path, origen: Path, destino: Path) -> Path:
     renders = proyecto / "renders"
     renders.mkdir(parents=True, exist_ok=True)
     final = renders / "render_engine.mp4"
-    shutil.copy2(origen, final)
-    if origen.resolve() != destino.resolve():
+    if origen.resolve() != final.resolve():
+        shutil.copy2(origen, final)
+    if origen.resolve() != destino.resolve() and destino.resolve() != final.resolve():
         shutil.copy2(origen, destino)
     metadata_path = renders / "metadata.json"
     if metadata_path.is_file():

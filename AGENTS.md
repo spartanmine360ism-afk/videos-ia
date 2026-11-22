@@ -420,6 +420,17 @@ Obligatorio para cada video nuevo. La plantilla `vertical-pro` ya trae el LOOK a
 
 ---
 
+## 17. Herramientas externas locales y render con módulos ES
+
+- `_shared/cache/github_tools/` guarda skills y documentación de repositorios MIT con `manifiesto.json` de procedencia; no se ejecutan scripts externos automáticamente.
+- `_shared/agentes/herramientas_externas.py` expone `resumen()` y `texto_para_prompt()`; el orquestador inyecta las recetas en el prompt y los agentes A05, A06, A11, A12, A13 y A15 las usan como reglas.
+- Bibliotecas vendorizadas en `_shared/templates/vertical-pro/assets/scripts/`: `three@0.187.0` (`three.module.js` + `three.core.js`), `d3@7.9.2`, `flubber@0.4.2` y `lottie.min.js` ya existente. Todas funcionan sin CDN.
+- `render_engine._capturar_frames(...)` sirve el proyecto por HTTP local en `127.0.0.1` antes de capturar con Playwright; esto permite módulos ES y `fetch` de JSON propios. FFmpeg sigue ensamblando el MP4.
+- Comando de prueba: `$env:PYTHONPATH="_shared"; python -m factory.render_engine <proyecto> --motor playwright --sin-cache`.
+- Prototipo validado: 6.0 s, 1080x1920, Three.js + D3 + Flubber + Lottie, `solapes_totales 0` y `problemas []`.
+
+---
+
 ## Mejoras Continuas de Calidad y Diseño
 
 Actualizado automáticamente el 2026-11-22 por `weekly_upgrade_radar.py`. Solo convierte señales públicas en reglas editoriales; no instala repositorios ni paquetes.
@@ -437,7 +448,7 @@ Actualizado automáticamente el 2026-11-22 por `weekly_upgrade_radar.py`. Solo c
 #### Estilo
 - Tipografía de impacto con alto contraste, jerarquía clara y microtexto en mayúsculas espaciadas.
 - SFX locales en sus tiempos exactos y voz edge-tts normalizada; sin audio remoto ni recursos externos en render.
-- Cero `filter:blur`, `backdrop-filter`, CDN o `fetch`; cualquier enfoque nuevo se adopta solo tras validación manual.
+- Cero `filter:blur`, `backdrop-filter`, CDN o `fetch` remoto; `fetch` de archivos propios del proyecto está permitido y cualquier enfoque nuevo se adopta solo tras validación manual.
 
 #### Señales de la semana · ritmo visual y edición
 

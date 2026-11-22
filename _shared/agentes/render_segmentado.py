@@ -1,5 +1,7 @@
 ﻿import hashlib
+import json
 import math
+import re
 import subprocess
 from pathlib import Path
 
@@ -27,9 +29,58 @@ def localizar_audio_proyecto(proyecto_dir: Path) -> Path | None:
     return None
 
 
+def detectar_estilo_tema(proyecto_dir: Path) -> dict:
+    """
+    Adapta el color y estilo al tema del video y a las referencias disponibles
+    en lugar de imponer un fondo oscuro fijo.
+    """
+    estilo = {
+        "fondo_hex": "#141a24",
+        "tema": "hud-diagramas-adaptativo",
+        "referencias_encontradas": [],
+    }
+
+    dirs_ref = [
+        proyecto_dir / "referencias",
+        Path(r"C:\Users\aldo_\Downloads\referencias"),
+    ]
+    for d in dirs_ref:
+        if d.exists() and d.is_dir():
+            for f in sorted(d.iterdir()):
+                if f.is_file() and f.suffix.lower() in {".gif", ".png", ".jpg", ".jpeg", ".webp", ".mp4", ".json", ".md"}:
+                    estilo["referencias_encontradas"].append(f.name)
+
+    texto_contexto = " ".join([
+        proyecto_dir.name.lower(),
+        " ".join(estilo["referencias_encontradas"]).lower(),
+    ])
+
+    for rel in ["config.json", "meta.json", "hyperframes.json", "guion.md", "guion.txt", "index.html"]:
+        p = proyecto_dir / rel
+        if p.exists():
+            try:
+                contenido = p.read_text(encoding="utf-8", errors="ignore")
+                texto_contexto += " " + contenido[:4000].lower()
+                m_hex = re.search(r'["\']?(?:bg|background|fondo|color_fondo)["\']?\s*[:=]\s*["\']?#([0-9a-fA-F]{6})["\']?', contenido)
+                if m_hex:
+                    estilo["fondo_hex"] = f"#{m_hex.group(1)}"
+            except Exception:
+                pass
+
+    if "claro" in texto_contexto or "light" in texto_contexto or "blanco" in texto_contexto:
+        estilo["fondo_hex"] = "#f4f6f9"
+        estilo["tema"] = "claro-tecnico"
+    elif "diagrama" in texto_contexto or "hud" in texto_contexto or "fpv" in texto_contexto or "dji" in texto_contexto:
+        estilo["tema"] = "hud-diagrama-dinamico"
+
+    return estilo
+
+
 def calcular_hash_proyecto(proyecto_dir: Path, duracion_objetivo: float) -> str:
     h = hashlib.sha256()
     h.update(f"{duracion_objetivo:.2f}".encode("utf-8"))
+    estilo = detectar_estilo_tema(proyecto_dir)
+    h.update(json.dumps(estilo, sort_keys=True).encode("utf-8"))
     for rel in ["index.html", "config.json", "hyperframes.json", "meta.json", "guion.md", "guion.txt"]:
         p = proyecto_dir / rel
         if p.exists():
@@ -47,13 +98,14 @@ def _render_tramo_con_audio(
     inicio_seg: float,
     dur_tramo: float,
     fps: int,
+    fondo_hex: str,
     audio_path: Path | None,
     timeout_por_segmento: int,
 ) -> None:
     cmd = [
         "ffmpeg", "-y",
         "-f", "lavfi",
-        "-i", f"color=c=#090d14:s=1080x1920:r={fps}:d={dur_tramo:.2f}",
+        "-i", f"color=c={fondo_hex}:s=1080x1920:r={fps}:d={dur_tramo:.2f}",
     ]
     if audio_path is not None:
         cmd.extend([
@@ -91,6 +143,7 @@ def renderizar_segmentado_seguro(
     if mp4_salida.exists():
         mp4_salida.replace(respaldo_temporal)
 
+    estilo = detectar_estilo_tema(proyecto_dir)
     audio_path = localizar_audio_proyecto(proyecto_dir)
     hash_id = calcular_hash_proyecto(proyecto_dir, duracion_seg)
     cache_dir = proyecto_dir / "_cache_segmentos" / hash_id
@@ -112,6 +165,7 @@ def renderizar_segmentado_seguro(
                     inicio_seg=inicio,
                     dur_tramo=dur_tramo,
                     fps=fps,
+                    fondo_hex=estilo["fondo_hex"],
                     audio_path=audio_path,
                     timeout_por_segmento=timeout_por_segmento,
                 )
@@ -141,7 +195,7 @@ def renderizar_segmentado_seguro(
             respaldo_temporal.unlink(missing_ok=True)
 
         audio_estado = f"audio={audio_path.name}" if audio_path else "sin audio detectado"
-        return True, f"Render segmentado OK ({duracion_seg:.1f}s, {len(segmentos_mp4)} tramos, {audio_estado})"
+        return True, f"Render segmentado OK ({duracion_seg:.1f}s, {len(segmentos_mp4)} tramos, tema={estilo['tema']}, {audio_estado})"
 
     except Exception as exc:
         if respaldo_temporal.exists() and not mp4_salida.exists():

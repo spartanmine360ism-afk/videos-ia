@@ -13,6 +13,7 @@ if str(FACTORY) not in sys.path:
 
 from .agentes import AGENTES, crear_agente_desde_spec
 from .contratos import Contexto, ResultadoAgente
+from .herramientas_externas import texto_para_prompt
 from .memoria import CACHE, escribir_json, hash_canonico, perfil_hardware
 from .telegram_decisiones import pedir_confirmacion, respaldar
 
@@ -40,6 +41,7 @@ def construir_prompt(contexto: Contexto, resultados: list[ResultadoAgente]) -> s
         f"Edición y ritmo: {_json(por_id.get('A10', {}))}",
         f"Diseño y zonas seguras: {_json(por_id.get('A11', {}))}",
         f"Assets y B-roll: {_json(por_id.get('A08', {}))}",
+        texto_para_prompt(),
         f"Cartoon/3D: {_json(por_id.get('A12', {}))}",
         f"QA previo: {_json(por_id.get('A14', {}))}",
         f"Metadata: {_json(por_id.get('A16', {}))}",
