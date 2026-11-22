@@ -218,6 +218,7 @@ def _capturar_frames(proyecto: Path, duracion: float, fps: int, clave: dict[str,
             navegador = motor.chromium.launch(headless=True, args=["--no-sandbox", "--use-gl=swiftshader"])
             pagina = navegador.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
             pagina.goto(url, wait_until="load", timeout=60000)
+            pagina.wait_for_function("window.__AURA_LISTO !== false", timeout=30000)
             pagina.wait_for_timeout(400)
             for indice in range(cantidad):
                 pagina.evaluate(SEEK_JS, indice / fps)
