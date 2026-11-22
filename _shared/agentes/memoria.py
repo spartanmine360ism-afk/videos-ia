@@ -174,7 +174,7 @@ def asegurar_paquete(nombre: str, import_name: str | None = None) -> dict[str, A
                 ],
                 capture_output=True,
                 text=True,
-                timeout=240,
+                timeout=900,
             )
             if instalacion.returncode != 0:
                 return {

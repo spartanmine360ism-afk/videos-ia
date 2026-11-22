@@ -7,7 +7,10 @@ import re
 import shutil
 import subprocess
 import sys
+import threading
 from datetime import datetime
+from functools import partial
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Callable
 
@@ -33,9 +36,17 @@ ARCHIVOS_CLAVE = [
     "hyperframes.json",
     "assets/styles/estilos.css",
     "assets/fonts/fonts.css",
+    "assets/scripts/three.module.js",
+    "assets/scripts/d3.min.js",
+    "assets/scripts/flubber.min.js",
     "assets/audio/voz.mp3",
     "assets/audio/voz.json",
 ]
+
+class _ServidorSilencioso(SimpleHTTPRequestHandler):
+    def log_message(self, formato: str, *args: Any) -> None:
+        return
+
 
 SEEK_JS = """
 (t) => {
@@ -197,15 +208,25 @@ def _capturar_frames(proyecto: Path, duracion: float, fps: int, clave: dict[str,
     from playwright.sync_api import sync_playwright
 
     index = proyecto / "index.html"
-    with sync_playwright() as motor:
-        navegador = motor.chromium.launch(headless=True, args=["--no-sandbox"])
-        pagina = navegador.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
-        pagina.goto(index.as_uri(), wait_until="load", timeout=60000)
-        pagina.wait_for_timeout(400)
-        for indice in range(cantidad):
-            pagina.evaluate(SEEK_JS, indice / fps)
-            pagina.screenshot(path=str(destino / f"frame-{indice:06d}.png"))
-        navegador.close()
+    manejador = partial(_ServidorSilencioso, directory=str(proyecto))
+    servidor = ThreadingHTTPServer(("127.0.0.1", 0), manejador)
+    hilo = threading.Thread(target=servidor.serve_forever, daemon=True)
+    hilo.start()
+    url = f"http://127.0.0.1:{servidor.server_address[1]}/{index.name}"
+    try:
+        with sync_playwright() as motor:
+            navegador = motor.chromium.launch(headless=True, args=["--no-sandbox", "--use-gl=swiftshader"])
+            pagina = navegador.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
+            pagina.goto(url, wait_until="load", timeout=60000)
+            pagina.wait_for_timeout(400)
+            for indice in range(cantidad):
+                pagina.evaluate(SEEK_JS, indice / fps)
+                pagina.screenshot(path=str(destino / f"frame-{indice:06d}.png"))
+            navegador.close()
+    finally:
+        servidor.shutdown()
+        servidor.server_close()
+        hilo.join(timeout=5)
     return destino, cantidad
 
 

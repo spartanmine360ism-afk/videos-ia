@@ -37,3 +37,10 @@ artifacts/
 node_modules/
 
 auditoria_*.txt
+
+# Parches y cache local
+*.bak_fix
+_cache_segmentos/
+cache_github_search.json
+auditoria_repo.txt
+auditoria_compacta.txt
